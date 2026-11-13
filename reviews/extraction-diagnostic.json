@@ -1,0 +1,34 @@
+{
+  "id": "chatcmpl-Ejv4qzEMda7hWWMqypemM46G6m7di",
+  "object": "chat.completion",
+  "created": 1794612872,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"supplier\": {\n    \"name\": \"Harbor Paper\",\n    \"reference\": \"HP-141\"\n  },\n  \"currency\": \"USD\",\n  \"quoteDate\": null,\n  \"deliveryDate\": \"2026-11-18\",\n  \"validUntil\": \"2026-12-01\",\n  \"freightCents\": 3000,\n  \"minimumOrderCents\": 0,\n  \"offers\": [\n    {\n      \"itemId\": \"cups\",\n      \"productName\": \"12 oz kraft coffee cups\",\n      \"packSize\": 100,\n      \"packUnit\": \"cups\",\n      \"priceCents\": 1325,\n      \"minimumPacks\": 1,\n      \"taxBasisPoints\": 750,\n      \"deliveryDate\": \"2026-11-18\",\n      \"priceExcerpt\": \"12 oz kraft coffee cups: 100 cups per pack, $13.25 per pack.\"\n    },\n    {\n      \"itemId\": \"lids\",\n      \"productName\": \"Lids for 12 oz cups\",\n      \"packSize\": 100,\n      \"packUnit\": \"lids\",\n      \"priceCents\": 725,\n      \"minimumPacks\": 1,\n      \"taxBasisPoints\": 750,\n      \"deliveryDate\": \"2026-11-18\",\n      \"priceExcerpt\": \"Lids for 12 oz cups: 100 lids per pack, $7.25 per pack.\"\n    },\n    {\n      \"itemId\": \"sleeves\",\n      \"productName\": \"Kraft cup sleeves\",\n      \"packSize\": 100,\n      \"packUnit\": \"sleeves\",\n      \"priceCents\": 500,\n      \"minimumPacks\": 1,\n      \"taxBasisPoints\": 750,\n      \"deliveryDate\": \"2026-11-18\",\n      \"priceExcerpt\": \"Kraft cup sleeves: 100 sleeves per pack, $5.00 per pack.\"\n    },\n    {\n      \"itemId\": \"napkins\",\n      \"productName\": \"Recycled paper napkins\",\n      \"packSize\": 500,\n      \"packUnit\": \"napkins\",\n      \"priceCents\": 1150,\n      \"minimumPacks\": 1,\n      \"taxBasisPoints\": 750,\n      \"deliveryDate\": \"2026-11-18\",\n      \"priceExcerpt\": \"Recycled paper napkins: 500 napkins per pack, $11.50 per pack.\"\n    }\n  ],\n  \"warnings\": [],\n  \"buyerReviewNote\": \"Draft extraction for buyer review only.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1261,
+    "completion_tokens": 553,
+    "total_tokens": 1814,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default"
+}

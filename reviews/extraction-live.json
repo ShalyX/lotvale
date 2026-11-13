@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-11-13T23:35:42.462Z",
+  "status": 200,
+  "response": {
+    "quote": {
+      "id": "7a70a1a0-af62-4e41-96a6-ff2fa954ecaf",
+      "supplier": "Harbor Paper",
+      "reference": "HP-141",
+      "currency": "USD",
+      "deliveryDate": "2026-11-18",
+      "validUntil": "2026-12-01",
+      "shippingCents": 3000,
+      "taxBps": 750,
+      "minOrderCents": 0,
+      "offers": [
+        {
+          "itemId": "cups",
+          "description": "12 oz kraft coffee cups",
+          "packSize": 100,
+          "priceCents": 1325,
+          "minPacks": 1,
+          "source": "12 oz kraft coffee cups: 100 cups per pack, $13.25 per pack."
+        },
+        {
+          "itemId": "lids",
+          "description": "Lids for 12 oz cups",
+          "packSize": 100,
+          "priceCents": 725,
+          "minPacks": 1,
+          "source": "Lids for 12 oz cups: 100 lids per pack, $7.25 per pack."
+        },
+        {
+          "itemId": "sleeves",
+          "description": "Kraft cup sleeves",
+          "packSize": 100,
+          "priceCents": 500,
+          "minPacks": 1,
+          "source": "Kraft cup sleeves: 100 sleeves per pack, $5.00 per pack."
+        },
+        {
+          "itemId": "napkins",
+          "description": "Recycled paper napkins",
+          "packSize": 500,
+          "priceCents": 1150,
+          "minPacks": 1,
+          "source": "Recycled paper napkins: 500 napkins per pack, $11.50 per pack."
+        }
+      ],
+      "notes": "Draft quotation extracted for buyer review. Net prices are stated, and tax is separately charged on merchandise plus freight.",
+      "sourceText": "FICTIONAL QA QUOTE — Harbor Paper, reference HP-141. Currency USD. 12 oz kraft coffee cups: 100 cups per pack, $13.25 per pack. Lids for 12 oz cups: 100 lids per pack, $7.25 per pack. Kraft cup sleeves: 100 sleeves per pack, $5.00 per pack. Recycled paper napkins: 500 napkins per pack, $11.50 per pack. Minimum quantity 1 pack per item. No merchandise order minimum ($0). Freight $30.00. Tax 7.5% on merchandise plus freight. Delivery November 18, 2026. Quote valid until December 1, 2026. Net prices; no substitutions.",
+      "confirmed": false,
+      "origin": "serv",
+      "requestId": "chatcmpl-Ejv5whlGmeN9V2Ct0Sn18WW2i2Zaa"
+    },
+    "warnings": [],
+    "trace": {
+      "requestId": "chatcmpl-Ejv5whlGmeN9V2Ct0Sn18WW2i2Zaa",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "elapsedMs": 2875,
+      "totalTokens": 1749
+    }
+  }
+}
