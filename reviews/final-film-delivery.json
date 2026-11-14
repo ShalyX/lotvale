@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-14T14:23:17.540Z",
+  "source": "https://lotvale-demo-video.vercel.app/lotvale-demo-stream.mp4",
+  "checks": {
+    "metadata": {
+      "duration": 120,
+      "width": 1920,
+      "height": 1080
+    },
+    "fullNormalSpeedPlayback": {
+      "time": 120,
+      "ended": true,
+      "error": 0,
+      "rate": 1,
+      "frames": 3600
+    }
+  },
+  "passed": true
+}

@@ -33,12 +33,12 @@ export default function DemoPage() {
           className={styles.video}
           controls
           playsInline
-          preload="metadata"
+          preload="none"
           poster="/demo-poster.jpg"
           aria-label="Lotvale two-minute product demonstration"
         >
           <source
-            src="https://lotvale-demo-video.vercel.app/lotvale-demo.mp4"
+            src="https://lotvale-demo-video.vercel.app/lotvale-demo-stream.mp4"
             type="video/mp4"
           />
           Your browser cannot play this video.{" "}

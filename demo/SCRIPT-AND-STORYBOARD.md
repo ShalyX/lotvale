@@ -1,6 +1,6 @@
 # Lotvale — Before you place the order
 
-STATUS: APPROVED BY USER FOR PRODUCTION. The user instructed: build the two-minute demo from this script and storyboard, with natural connected voiceover, engaging motion and a clear real SERV flow. See PRODUCTION.md for measured timing and execution evidence. Narration wording below remains unchanged.
+STATUS: APPROVED BY USER FOR PRODUCTION. The user instructed: build the two-minute demo from this script and storyboard, with natural connected voiceover, engaging motion and a clear real SERV flow. See README.md for the released artifact, timing and execution evidence. Narration wording below remains unchanged.
 
 Creative target: approximately two minutes at a natural explanatory pace. Timing below is an editorial guide, not a hackathon limit. The recorded read should determine final shot lengths. New connected narration; do not reuse the disconnected one-line voice stems.
 

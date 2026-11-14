@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-11-14T14:14:15.775Z",
+  "origin": "https://lotvale.vercel.app",
+  "fictionalData": true,
+  "checks": {
+    "publicSample75508": true,
+    "sampleDraftDownload": true,
+    "dateFreshFixtures": {
+      "deadline": "2026-11-21",
+      "quoteCount": 2,
+      "cacheControl": "no-store",
+      "invalidKind": 400
+    },
+    "restoreStartingFixture": true,
+    "realServImportAndSourceReview": {
+      "status": 200,
+      "requestId": "chatcmpl-Ek8oqxY0LbrJg3ioDKeMdjVdIzgl6",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "offers": 4,
+      "confirmedOnReturn": false,
+      "warnings": [
+        "Check 12 oz kraft coffee cups: the returned source excerpt was not found verbatim.",
+        "Check Lids for 12 oz cups: the returned source excerpt was not found verbatim.",
+        "Check Kraft cup sleeves: the returned source excerpt was not found verbatim.",
+        "Check Recycled paper napkins: the returned source excerpt was not found verbatim."
+      ]
+    },
+    "servConfirmedPlan75508": true,
+    "comparisonCsv": true,
+    "servDraftMatchesPlan": true,
+    "backupRestoreReloadRoundtrip": {
+      "quotes": 3,
+      "requestIdPreserved": true,
+      "total": 755.08
+    },
+    "mobile/demo": {
+      "viewport": 390,
+      "width": 390
+    },
+    "mobile/app": {
+      "viewport": 390,
+      "width": 390
+    },
+    "businessRequiresSignIn": true,
+    "verifiedQaSignIn": true,
+    "verifiedBusinessOverview": true,
+    "cloudSaveOverviewReopen": {
+      "saved": true,
+      "workflow": "drafts",
+      "total": 755.08
+    },
+    "sampleIntactAfterBusinessSignOut": true
+  },
+  "consoleErrors": [],
+  "passed": true,
+  "completedAt": "2026-11-14T14:22:52.159Z",
+  "previousAttempt": {
+    "failure": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://lotvale.vercel.app/business\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "consoleErrors": [
+      "Loading chunk 290 failed.\n(error: https://lotvale.vercel.app/_next/static/chunks/290-6b4be12b467dda37.js)"
+    ]
+  }
+}
