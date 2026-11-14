@@ -1,3 +1,5 @@
+LATEST REQUIREMENT: Read SERV-PROOF-REQUIREMENTS.md. Real SERV import, response and source review are mandatory; a sample-only film fails. This overrides any earlier sample-fallback or sponsor-as-end-credit guidance.
+
 # Production checklist
 
 PREPARED by Codex: brief, selected treatment, shot timings, narration, exact capture choreography, regenerating fixtures, source brand assets, public-release proof, truth/rights checks, Antigravity task and submission copy.
@@ -17,3 +19,12 @@ PENDING execution in Antigravity:
 - [ ] Obtain hosting/upload authorization if required; verify final playable public video URL.
 
 The video is not produced, approved or submitted yet. No unchecked item may be marked passed merely because a command exited0.
+
+Mandatory sponsor gate:
+- [ ] Real Counter source pasted and Interpret quote clicked on camera.
+- [ ] Actual loading/result retained as continuous raw proof; no fabricated trace or response.
+- [ ] SERV Reasoning legible during request and returned terms, not just end card.
+- [ ] At least24s of request/result/review in final55s cut.
+- [ ] Product mapping, pack price, freight, tax and dates visibly reviewed; confirmation shown.
+- [ ] Actual newly reviewed quote leads to755.08 plan and matching draft.
+- [ ] Sanitized provenance recorded; sample-only fallback rejected.
