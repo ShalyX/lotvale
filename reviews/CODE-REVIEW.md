@@ -8,7 +8,7 @@ Resolved findings:
 - HIGH: net pricing and separately added tax were misclassified in the initial prompt. Clarified the distinction and tested the same quote successfully. Extraction is still reviewed, never assumed reliable in general.
 - MEDIUM: manual offer fields defaulted to zero price and unit pack size. They now start unresolved, and schema/form validation requires the buyer to enter them.
 - MEDIUM: editing a basket item specification could preserve confirmation of an old match. Specification/unit changes invalidate affected quote review.
-- MEDIUM: the local API exception needed to be development-only. Production extraction requires the Sites-authenticated user header; the local-host exception is gated by the development build flag.
+- MEDIUM: the local API exception needed to be development-only. The migrated Next.js handler allows local development and an explicit protected-review flag. Vercel Authentication protects the preview before requests reach it; production interpretation remains disabled without its own access policy.
 - MEDIUM: compact mobile backup button lost its accessible name. Added an explicit label.
 - MEDIUM: mobile root overflow was observed. Tables retain independent horizontal scrolling; the document root clips lateral overflow. Reinspection pending after the correction.
 

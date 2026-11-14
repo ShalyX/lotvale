@@ -1,9 +1,14 @@
 # QA checkpoint
 
-15 planner/export tests passed. TypeScript check passed before the final readability edits. Production Vite build passed before the extraction prompt correction. Both must be rerun after final changes.
+Fifteen planner/export tests pass. The standard Next.js production build passes. This replaces the earlier Worker runtime.
 
-Browser: sample quote flow reached $755.08 / Counter Supply; selecting split plan yielded $766.69 across Counter Supply ($326.80) and Westbridge Goods ($439.89). Actual draft TXT downloaded to Downloads and inspected, with quantities, totals and draft/fictional labels.
+Browser checks on the earlier runtime, using the same purchase interface and planner:
+- Sample complete plan: Counter Supply, $755.08.
+- Selected split plan: $766.69, split into Counter Supply $326.80 and Westbridge Goods $439.89; actual downloaded TXT inspected.
+- Real SERV Harbor Paper import: four matching offers, buyer confirmation, complete plan $724.55.
+- Budget changed to $700: old selection invalidated and $24.55 over-budget result displayed.
+- Actual JSON backup downloaded and inspected.
 
-Real SERV extraction: first fictional Harbor Paper quote failed because model misclassified separately added tax as inclusive. Input was preserved and manual fallback shown. Prompt clarified; same quote being retested. This failure is not hidden or counted as a successful extraction.
+The initial extraction misclassified separately added tax. Clarified instructions and strict provider JSON schema fixed the same fixture. Missing-term and injection cases preserve unresolved terms; incompatible products are rejected. Detailed responses are stored alongside this file.
 
-Remaining: extraction success and negative cases, mobile inspection, invalidation after brief edits, restore/backup, final build, private deployment, public repo/link decisions, demo package.
+Remaining verification: hosted Vercel flow, mobile overflow reinspection, and browser file-restore roundtrip. Desktop/mobile captures record the earlier local runtime and must not be described as hosted-release screenshots. Demo video and official submission are not complete.

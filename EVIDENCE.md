@@ -1,15 +1,17 @@
 # Evidence registry
 
-| Claim | Method | Current evidence / limit |
+All suppliers and prices in QA are fictional. Figures below demonstrate the modeled workflow; they are not customer savings.
+
+| Claim | Evidence | Limit |
 |---|---|---|
-| Real SERV connectivity | Authenticated request with gpt-5.4-mini | HTTP 200; chatcmpl-EjrHP280UKa6c9EUk2CflX2YWC1YH; 259 tokens; 2026-11-13. Connectivity only, not product extraction. |
-| Correct complete buying plans | Hand-verifiable fixture plus constraint tests and UI | PENDING |
-| Useful order drafts | Export and inspect actual selected allocations | PENDING |
-| Live quote interpretation | Actual quote text -> API -> reviewed offer | PENDING |
-| Responsive usable workflow | Desktop/mobile captures and actual interactions | PENDING |
-| Reliable deployed product | Build, deploy result and hosted verification | PENDING |
-| Customer demand/revenue/savings | Real buyer evidence | UNPROVEN; do not claim |
+| Complete buying plans | 15 planner/export tests; browser sample selected Counter Supply at $755.08 | Up to six items/quotes, one supplier per item, supported tax basis only |
+| Selected allocations become useful drafts | Browser selected $766.69 split plan; downloaded TXT inspected: Counter $326.80 and Westbridge $439.89 | Draft only; no dispatch or supplier acceptance |
+| Real SERV interpretation | Harbor Paper text returned four matching offers; buyer review produced $724.55 complete plan. Request chatcmpl-Ejv6VUFISJyMz2EzSVrx45GPMH4wO | One synthetic successful browser example; human review still required |
+| Missing and incompatible terms | Live unknown-term/injection case preserved null values and unconfirmed status; incompatible product rejected with 422 | Bounded adversarial examples, not general extraction accuracy |
+| Requirement changes | Lowering budget to $700 invalidated selection and displayed $24.55 over budget | Browser local persistence only |
+| Backup | Downloaded versioned JSON inspected; schema validation and roundtrip tested | File chooser prevented full browser restore verification |
+| Responsive interface | Desktop and mobile captures in reviews | Mobile root overflow correction needs final reinspection |
+| Vercel runtime | Standard Next.js production build and TypeScript check | Hosted runtime review pending deployment |
+| Demand, revenue and savings | Unproven | No customer or commercial claims |
 
-Key source: user-authorized local configuration. Credentials are not included in this repository.
-
-Dependency attack: SERV access PROVEN for connectivity (one attempt, under a minute); schema extraction still open. Install: helper failed EPERM, direct npm hit offline cache; network-enabled direct npm is running. Budget: at most three materially different installation attempts before alternate runtime. Private Sites identity created; publication not yet performed. Runtime secrets, build compatibility and browser flow remain unproven.
+Live API responses and screenshots are under reviews/. No credentials are included. Earlier extraction failures led to clarified tax instructions and a provider-enforced JSON schema; see reviews/CODE-REVIEW.md.

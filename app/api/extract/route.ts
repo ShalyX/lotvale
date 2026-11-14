@@ -1,4 +1,3 @@
-import { env } from "cloudflare:workers";
 import { z } from "zod";
 import { itemSchema, quoteSchema, isoToday } from "@/lib/schema";
 import { extractionFormat } from "@/lib/extraction-format";
@@ -7,14 +6,20 @@ const inputSchema = z.object({
   items: z.array(itemSchema).min(1).max(6),
   currency: z.string().regex(/^[A-Z]{3}$/),
 });
+export const runtime = "nodejs";
+export const maxDuration = 120;
 const headers = { "Cache-Control": "no-store" };
 export async function POST(request: Request) {
   const url = new URL(request.url);
-  const local = import.meta.env.DEV && ["localhost", "127.0.0.1", "[::1]"].includes(url.hostname);
-  if (!local && !request.headers.get("oai-authenticated-user-id"))
+  // The review deployment is protected by Vercel Authentication before this handler.
+  const local = process.env.NODE_ENV !== "production";
+  if (!local && process.env.LOTVALE_REVIEW_MODE !== "1")
     return Response.json(
-      { error: "Sign in to interpret supplier quotes." },
-      { status: 401, headers },
+      {
+        error:
+          "Quote interpretation is enabled in the protected review deployment. You can enter terms manually here.",
+      },
+      { status: 403, headers },
     );
   const origin = request.headers.get("origin");
   if (origin && origin !== url.origin)
@@ -42,7 +47,7 @@ export async function POST(request: Request) {
       { error: "Add basket items and 30–24,000 characters of quote text." },
       { status: 400, headers },
     );
-  const key = (env as unknown as { SERV_API_KEY?: string }).SERV_API_KEY;
+  const key = process.env.SERV_API_KEY;
   if (!key)
     return Response.json(
       {

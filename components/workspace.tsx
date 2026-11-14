@@ -90,7 +90,13 @@ export function Workspace() {
   }, [project, dirty]);
   const result = useMemo(
     () => (project ? buildPlans(project) : null),
-    [project?.items, project?.quotes, project?.currency, project?.deadline, project?.budgetCents],
+    [
+      project?.items,
+      project?.quotes,
+      project?.currency,
+      project?.deadline,
+      project?.budgetCents,
+    ],
   );
   const selected =
     result?.plans.find((p) => p.id === selectedId) || result?.plans[0] || null;

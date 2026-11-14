@@ -1,5 +1,7 @@
 # Lotvale
 
+![Lotvale](public/og.png)
+
 **Make the whole order work.**
 
 A cheap quote can still make a bad purchase. Pack quantities, minimum orders, freight and delivery dates change which basket you can actually buy.
@@ -32,7 +34,7 @@ Use Node.js 24 and npm.
 npm ci
 ```
 
-Create an ignored `.dev.vars` file at the project root:
+Create an ignored `.env.local` file at the project root:
 
 ```dotenv
 SERV_API_KEY=your_key_here
@@ -52,7 +54,7 @@ npm test
 npm run build
 ```
 
-The application uses React, Vinext/Vite and a Cloudflare Worker. The Sites scaffold supplies its deployment, identity and connector infrastructure. Local API calls are allowed only in development; production extraction requires the authenticated identity supplied by Sites. Preserve that boundary when moving hosts.
+The application uses React and standard Next.js on Vercel. The review deployment is protected by Vercel Authentication before API requests reach the app. Shared-key quote interpretation is enabled for local development and for a protected Vercel preview with `LOTVALE_REVIEW_MODE=1`; production deployments reject it until a separate access policy is implemented. Do not disable preview protection while using the shared SERV key.
 
 ## Supported commercial model
 

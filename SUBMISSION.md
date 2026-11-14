@@ -1,6 +1,6 @@
 # Lotvale — submission draft
 
-Status: application implementation and local verification in progress; not submitted.
+Status: implemented and locally verified; Vercel review deployment in progress; not submitted.
 
 ## Short description
 
@@ -30,8 +30,8 @@ The intended buyer is a small business operator who buys from several quotes wit
 
 ## Links and release checks
 
-- Public repository: PENDING — current local GitHub credential is expired.
-- Live demo: PENDING deployment; private owner review initially.
+- Public repository: https://github.com/ShalyX/lotvale — publication in progress.
+- Live demo: Vercel protected review deployment in progress.
 - Demo video: PENDING production/QA.
 - X submission post and post URL: PENDING explicit posting authorization.
 - Official form fields/eligibility details: PENDING final interactive inspection.
