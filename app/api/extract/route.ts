@@ -11,13 +11,17 @@ export const maxDuration = 120;
 const headers = { "Cache-Control": "no-store" };
 export async function POST(request: Request) {
   const url = new URL(request.url);
-  // The review deployment is protected by Vercel Authentication before this handler.
+  // Public interpretation is enabled only after configuring the deployment firewall.
   const local = process.env.NODE_ENV !== "production";
-  if (!local && process.env.LOTVALE_REVIEW_MODE !== "1")
+  if (
+    !local &&
+    process.env.LOTVALE_REVIEW_MODE !== "1" &&
+    process.env.LOTVALE_PUBLIC_EXTRACTION !== "1"
+  )
     return Response.json(
       {
         error:
-          "Quote interpretation is enabled in the protected review deployment. You can enter terms manually here.",
+          "Quote interpretation is unavailable here. You can enter terms manually.",
       },
       { status: 403, headers },
     );

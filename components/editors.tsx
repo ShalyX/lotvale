@@ -625,7 +625,10 @@ export function QuoteEditor({
                       }
                       onChange={(e) =>
                         changeOffer(o.itemId, {
-                          priceCents: Math.round(Number(e.target.value) * 100),
+                          priceCents:
+                            e.target.value === ""
+                              ? NaN
+                              : Math.round(Number(e.target.value) * 100),
                         })
                       }
                     />
