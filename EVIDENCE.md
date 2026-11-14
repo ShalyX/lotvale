@@ -16,3 +16,5 @@ All QA suppliers and prices are fictional. No customer savings, demand or revenu
 Earlier local/preview captures and API responses remain labeled by their QA notes. Video and official submission are incomplete.
 
 Business workspace extension: actual managed signup and cloud persistence/isolation/conflict checks in reviews/business-acceptance.json; local browser flows and limits in reviews/BUSINESS-QA.md. Public deployment verification pending.
+
+Business production release VERIFIED: https://lotvale.vercel.app/business, deployment dpl_8v7nD4MU3C1RsoDhe17bYdfFWycS. Actual browser signup/onboarding/create/overview and live persistence/isolation/conflict checks passed. Public sample route and anonymous SERV response preserved; see reviews/BUSINESS-QA.md and business-demo-regression.json.

@@ -11,3 +11,5 @@ Overview: business name and purchasing defaults, New purchase, searchable purcha
 Acceptance: sign-up/sign-in/sign-out, server route protection, business onboarding/update, create/open/edit/save/reopen purchases, second-session persistence, cross-account denial, conflict preservation, clear errors, responsive rendering, and public sample regression. No team roles, invitations, ordering or payment added.
 
 Infrastructure: Neon project lingering-river-45343827; branch br-small-darkness-bbrxpwwi. An attempted five-minute suspend timeout was rejected by the account's settings; no autosuspend claim. No product completion claimed before acceptance checks.
+
+Shipped November14: production build and all11 live cloud acceptance groups pass. Browser signup/business creation/purchase creation/overview passed in production. Local browser edit-save-reload, JSON restore and chosen split-plan/draft persistence passed. Email verification is currently off; recovery email delivery remains unverified. Cloud save is explicit, not automatic. Overview loads the latest200 purchase summaries.

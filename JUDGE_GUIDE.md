@@ -11,3 +11,5 @@ Open https://lotvale.vercel.app and choose **Try a sample purchase**. No login i
 The production API permits six interpretation requests per minute per IP. If it is throttled or SERV is unavailable, the sample and manual quote entry remain available. Your purchase saves in this browser; **Backup** exports JSON and **Restore** loads a backup after confirmation.
 
 Implementation/evidence: [README](README.md), [product scope](PRODUCT.md), [evidence](EVIDENCE.md), [QA](reviews/QA.md). SERV interprets text; code calculates plans; the buyer decides.
+
+Business workspace: [Create an account](https://lotvale.vercel.app/auth/sign-up), enter business defaults, then create and reopen cloud purchases from [the overview](https://lotvale.vercel.app/business). Choose Save purchase to retain edits and the selected workflow. This is optional for judges; the sample above remains public and independent.

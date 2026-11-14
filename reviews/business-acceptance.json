@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-14T06:00:35.678Z",
-  "base": "http://127.0.0.1:5180",
+  "checkedAt": "2026-11-14T06:09:24.281Z",
+  "base": "https://lotvale.vercel.app",
   "report": [
     {
       "name": "Unauthenticated APIs denied; business redirects; sample public",

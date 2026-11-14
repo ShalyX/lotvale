@@ -7,3 +7,5 @@ Standard Next.js on Node 24, MIT license, matching favicon/social card, reproduc
 Fixed cleared-price input retaining zero. Rechecked 15 tests, TypeScript and Vercel production build. Public API uses server-only sensitive SERV key and verified six/minute/IP firewall limit. This does not provide a global spending cap.
 
 Open: full browser backup restore, demo film, official submission audit and receipt. No X post or form submission performed.
+
+Business release: managed auth and owner-scoped server queries; DB and cookie secrets stored server-only. Source/history and36 local compiled client assets scanned without configured-secret matches. Actual production account and purchase checks passed; final report reviews/BUSINESS-QA.md. Only synthetic QA accounts/data created during checks.
