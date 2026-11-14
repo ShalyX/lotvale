@@ -38,11 +38,11 @@ export default function DemoPage() {
           aria-label="Lotvale two-minute product demonstration"
         >
           <source
-            src="https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4"
+            src="https://lotvale-demo-video.vercel.app/lotvale-demo.mp4"
             type="video/mp4"
           />
           Your browser cannot play this video.{" "}
-          <a href="https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4">
+          <a href="https://lotvale-demo-video.vercel.app/lotvale-demo.mp4">
             Download the film
           </a>
           .
