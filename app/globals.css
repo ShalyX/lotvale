@@ -1996,6 +1996,9 @@ th:last-child {
     padding: 8px;
   }
   .workspace-tools > .button > span {
+    display: inline;
+  }
+  .workspace-tools .save-status {
     display: none;
   }
   .workspace-tools > .icon-button {
