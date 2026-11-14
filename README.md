@@ -8,6 +8,8 @@ A cheap quote can still make a bad purchase. Pack quantities, minimum orders, fr
 
 Lotvale turns supplier quotes into complete buying plans and supplier-specific order drafts. It is built for small-business buyers who already have their quotes and need to make a decision.
 
+Review deployment: [Vercel preview](https://lotvale-o4qyyal84-shalyxs-projects.vercel.app) (Vercel sign-in required).
+
 ## Use it
 
 1. Set your basket, quantities, budget and deadline.
