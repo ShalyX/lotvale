@@ -1,0 +1,66 @@
+{
+  "deployment": "https://lotvale-nio4wjh93-shalyxs-projects.vercel.app",
+  "deploymentId": "dpl_9xcjoZfGjW1JuzYN2PAQQo9gCWzZ",
+  "sourceCommit": "8cee0de",
+  "nodeVersion": "24.x",
+  "checkedAt": "2026-11-14T00:34:33.958Z",
+  "httpStatus": 200,
+  "fixture": "Fictional Harbor Paper QA quote",
+  "quote": {
+    "id": "b93c81b3-909a-4a0a-94ca-f771b45f2a79",
+    "supplier": "Harbor Paper",
+    "reference": "HP-141",
+    "currency": "USD",
+    "deliveryDate": "2026-11-18",
+    "validUntil": "2026-12-01",
+    "shippingCents": 3000,
+    "taxBps": 750,
+    "minOrderCents": 0,
+    "offers": [
+      {
+        "itemId": "cups",
+        "description": "12 oz kraft coffee cups",
+        "packSize": 100,
+        "priceCents": 1325,
+        "minPacks": 1,
+        "source": "12 oz kraft coffee cups: 100 cups per pack, $13.25 per pack."
+      },
+      {
+        "itemId": "lids",
+        "description": "Lids for 12 oz cups",
+        "packSize": 100,
+        "priceCents": 725,
+        "minPacks": 1,
+        "source": "Lids for 12 oz cups: 100 lids per pack, $7.25 per pack."
+      },
+      {
+        "itemId": "sleeves",
+        "description": "Kraft cup sleeves",
+        "packSize": 100,
+        "priceCents": 500,
+        "minPacks": 1,
+        "source": "Kraft cup sleeves: 100 sleeves per pack, $5.00 per pack."
+      },
+      {
+        "itemId": "napkins",
+        "description": "Recycled paper napkins",
+        "packSize": 500,
+        "priceCents": 1150,
+        "minPacks": 1,
+        "source": "Recycled paper napkins: 500 napkins per pack, $11.50 per pack."
+      }
+    ],
+    "notes": "All four quoted items match the basket unambiguously. Prices are net; tax is stated separately and applies to merchandise plus freight. Minimum quantity is 1 pack per item. No merchandise order minimum is stated as $0.",
+    "sourceText": "FICTIONAL QA QUOTE — Harbor Paper, reference HP-141. Currency USD. 12 oz kraft coffee cups: 100 cups per pack, $13.25 per pack. Lids for 12 oz cups: 100 lids per pack, $7.25 per pack. Kraft cup sleeves: 100 sleeves per pack, $5.00 per pack. Recycled paper napkins: 500 napkins per pack, $11.50 per pack. Minimum quantity 1 pack per item. No merchandise order minimum ($0). Freight $30.00. Tax 7.5% on merchandise plus freight. Delivery November 18, 2026. Quote valid until December 1, 2026. Net prices; no substitutions.",
+    "confirmed": false,
+    "origin": "serv",
+    "requestId": "chatcmpl-Ejw0Q69v2brfXh6HPS69Igm1WEzTD"
+  },
+  "warnings": [],
+  "trace": {
+    "requestId": "chatcmpl-Ejw0Q69v2brfXh6HPS69Igm1WEzTD",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "elapsedMs": 2516,
+    "totalTokens": 1772
+  }
+}

@@ -11,4 +11,6 @@ Browser checks on the earlier runtime, using the same purchase interface and pla
 
 The initial extraction misclassified separately added tax. Clarified instructions and strict provider JSON schema fixed the same fixture. Missing-term and injection cases preserve unresolved terms; incompatible products are rejected. Detailed responses are stored alongside this file.
 
-Remaining verification: hosted Vercel flow, mobile overflow reinspection, and browser file-restore roundtrip. Desktop/mobile captures record the earlier local runtime and must not be described as hosted-release screenshots. Demo video and official submission are not complete.
+Hosted Node 24 release: build READY; authenticated landing and workspace HTML returned 200; actual API returned 200 with all four expected offers, freight/tax and unconfirmed status. Evidence: vercel-extraction.json.
+
+Remaining verification: hosted browser flow, mobile overflow reinspection, and browser file-restore roundtrip. Desktop/mobile captures record the earlier local runtime and must not be described as hosted-release screenshots. Demo video and official submission are not complete.
