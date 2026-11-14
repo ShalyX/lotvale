@@ -178,12 +178,13 @@ export function Workspace() {
             <span>Backup</span>
           </button>
           <button
-            className="icon-button"
+            className="button small ghost"
             title="Restore project backup"
             aria-label="Restore project backup"
             onClick={() => backupInput.current?.click()}
           >
-            <Upload size={17} />
+            <Upload size={15} />
+            <span>Restore</span>
           </button>
           <input
             ref={backupInput}
