@@ -18,3 +18,5 @@ Earlier local/preview captures and API responses remain labeled by their QA note
 Business workspace extension: actual managed signup and cloud persistence/isolation/conflict checks in reviews/business-acceptance.json; local browser flows and limits in reviews/BUSINESS-QA.md. Public deployment verification pending.
 
 Business production release VERIFIED: https://lotvale.vercel.app/business, deployment dpl_8v7nD4MU3C1RsoDhe17bYdfFWycS. Actual browser signup/onboarding/create/overview and live persistence/isolation/conflict checks passed. Public sample route and anonymous SERV response preserved; see reviews/BUSINESS-QA.md and business-demo-regression.json.
+
+Email verification and recovery release: production deployment dpl_3DPUCxyJNhdKmBvBAh8QBH131p7a. Actual delivered OTP verified through browser; reset link completed through browser; old password/session denied; new sign-in recovered the same cloud purchase; reset-token replay denied. Verified-account business acceptance passed all 11 groups. Public sample still builds $755.08 signed out. See reviews/AUTH-QA.md for limits and sender configuration.

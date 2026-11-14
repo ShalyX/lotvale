@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-14T09:10:06.754Z",
+  "base": "https://lotvale.vercel.app",
+  "deploymentId": "dpl_3DPUCxyJNhdKmBvBAh8QBH131p7a",
+  "checks": {
+    "actualVerificationEmailDelivered": true,
+    "wrongCodeRejectedAPI": true,
+    "wrongCodeRejectedBrowser": true,
+    "newSignupShowsVerification": true,
+    "unverifiedBusinessDenied": true,
+    "browserDeliveredCodeReachedBusiness": true,
+    "passwordResetEmailDelivered": true,
+    "resetLinkReachedCorrectOrigin": true,
+    "browserPasswordResetSucceeded": true,
+    "resetTokenRemovedFromURL": true,
+    "oldSessionRejected401": true,
+    "oldPasswordRejected401": true,
+    "newPasswordAccepted200": true,
+    "sameCloudPurchaseRecovered": true,
+    "resetTokenReplayDenied": true,
+    "missingResetTokenFriendlyError": true,
+    "mobile390NoOverflow": true,
+    "anonymousSample75508": true,
+    "anonymousServFourUnconfirmedOffers": true
+  },
+  "method": "Actual Neon emails received in isolated fictional Mail.tm inboxes. Browser signup/verification and password reset performed against public Vercel app. API checks validate provider enforcement and persistent purchase recovery. No DB verification/token bypass.",
+  "limits": [
+    "Neon shared sender; dedicated SMTP not configured",
+    "A separate automated fresh-inbox repetition timed out; see auth-email-acceptance.json. It is not counted as a successful automated email run.",
+    "No inbox-placement or volume guarantee across other email providers"
+  ]
+}

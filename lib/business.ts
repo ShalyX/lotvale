@@ -29,8 +29,11 @@ export const businessSchema = z.object({
     ),
 });
 export async function currentUser() {
-  const { data: session } = await auth.getSession();
-  return session?.user ?? null;
+  // Revalidate with the provider so reset/revocation is not delayed by the cached cookie.
+  const { data: session } = await auth.getSession({
+    query: { disableCookieCache: "true" },
+  });
+  return session?.user?.emailVerified ? session.user : null;
 }
 export async function ownedBusiness(userId: string) {
   return (

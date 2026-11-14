@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T06:09:24.281Z",
+  "checkedAt": "2026-11-14T09:03:36.240Z",
   "base": "https://lotvale.vercel.app",
   "report": [
     {
@@ -7,7 +7,7 @@
       "status": "passed"
     },
     {
-      "name": "Real managed account signup",
+      "name": "Verified managed account sign-in",
       "status": "passed"
     },
     {

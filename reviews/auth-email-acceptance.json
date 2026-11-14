@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-14T09:09:13.717Z",
+  "base": "https://lotvale.vercel.app",
+  "report": [
+    {
+      "name": "Signup requires email verification and denies business access",
+      "status": "passed"
+    },
+    {
+      "name": "Email acceptance",
+      "status": "failed",
+      "error": "QA mailbox delivery timed out; do not infer a general email outage."
+    }
+  ],
+  "limits": "Fictional disposable mailbox via https://mail.tm; actual provider emails. Does not establish inbox placement across all providers. No customer data or secrets retained."
+}

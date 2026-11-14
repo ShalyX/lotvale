@@ -8,3 +8,6 @@ dist
 .dev.vars*
 work
 outputs
+
+remotion
+REMOTION_DEMO_PLAN.md

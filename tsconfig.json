@@ -40,6 +40,7 @@
     ".wrangler",
     ".sites-runtime",
     "outputs",
-    "work"
+    "work",
+    "remotion"
   ]
 }

@@ -7,7 +7,13 @@ export default async function AuthPage({
 }) {
   const { path } = await params;
   if (
-    !["sign-in", "sign-up", "forgot-password", "reset-password"].includes(path)
+    ![
+      "sign-in",
+      "sign-up",
+      "forgot-password",
+      "reset-password",
+      "verify-email",
+    ].includes(path)
   )
     notFound();
   return <AuthScreen mode={path} />;

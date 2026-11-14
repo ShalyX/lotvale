@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-14T09:09:15.752Z",
+  "authenticated": false,
+  "httpStatus": 200,
+  "offerCount": 4,
+  "confirmed": false,
+  "trace": {
+    "requestId": "chatcmpl-Ek42zMaG4Ad3XT5kRcSdeTplYzGQc",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "elapsedMs": 2686,
+    "totalTokens": 1776
+  }
+}
