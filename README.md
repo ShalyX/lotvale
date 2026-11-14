@@ -8,7 +8,7 @@ A cheap quote can still make a bad purchase. Pack quantities, minimum orders, fr
 
 Lotvale turns supplier quotes into complete buying plans and supplier-specific order drafts. It is built for small-business buyers who already have their quotes and need to make a decision.
 
-Review deployment: [Vercel preview](https://lotvale-nio4wjh93-shalyxs-projects.vercel.app) (Vercel sign-in required).
+Live app: [lotvale.vercel.app](https://lotvale.vercel.app) — public access, no sign-in required.
 
 ## Use it
 
@@ -56,7 +56,7 @@ npm test
 npm run build
 ```
 
-The application uses React and standard Next.js on Vercel. The review deployment is protected by Vercel Authentication before API requests reach the app. Shared-key quote interpretation is enabled for local development and for a protected Vercel preview with `LOTVALE_REVIEW_MODE=1`; production deployments reject it until a separate access policy is implemented. Do not disable preview protection while using the shared SERV key.
+The application uses React and standard Next.js on Vercel. Public quote interpretation uses a server-only SERV key and a Vercel firewall rule allowing six requests per minute per IP. Excess requests are blocked at the edge. Production requires LOTVALE_PUBLIC_EXTRACTION=1 after that rule is configured; protected review deployments may use LOTVALE_REVIEW_MODE=1. The rate limit reduces abuse but is not a global spending cap.
 
 ## Supported commercial model
 

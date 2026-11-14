@@ -1,13 +1,10 @@
 # Judge-readiness assessment
 
-Official dimensions: creativity, user readiness and revenue potential. Numerical weights are unknown; no invented score is assigned.
+Official dimensions are creativity, user readiness and revenue potential. Numerical weights are unknown.
 
-| Dimension | Evidence | Remaining weakness |
-|---|---|---|
-| Creativity | A complete purchase combines pack rounding, minimums, freight, tax and dates; the output is supplier drafts | No verified novelty claim against every entrant |
-| User readiness | Real SERV import, editable review, complete plans, exports and browser persistence; 15 tests and local browser proof | Hosted visual QA, restore and mobile reinspection remain open; preview requires sign-in |
-| Revenue potential | Specific small-business buying workflow and plausible per-project/team pricing hypothesis | No buyer interview, paid customer or willingness-to-pay evidence |
-| Mandatory SERV use | Hosted real extraction with request ID in reviews/vercel-extraction.json | Human review is required; binary PDF/OCR unsupported |
-| Submission package | Public repository, deployed review build, short write-up and original brand | Public judge link, film, X link and form receipt missing |
+- Creativity: the complete order accounts for packs, freight, tax, minimums and dates, and becomes supplier drafts. No universal novelty claim.
+- User readiness: public app, real SERV extraction, source review, complete plans, drafts and browser storage; automated and hosted browser evidence. Full file-restore QA remains inconclusive.
+- Revenue potential: specific small-business workflow and pricing hypothesis; demand and willingness to pay unvalidated.
+- Submission package: public source and app, original identity, write-up and proof. Film, X link, form audit and receipt remain open.
 
-The distinctive payoff is a workable whole order, rather than a table of extracted quote prices. Current status: implemented and reviewable, not READY_TO_SUBMIT.
+Current status: public and demoable; not READY_TO_SUBMIT.

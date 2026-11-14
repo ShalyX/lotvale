@@ -31,7 +31,7 @@ The intended buyer is a small business operator who buys from several quotes wit
 ## Links and release checks
 
 - Public repository: https://github.com/ShalyX/lotvale — public, verified.
-- Live demo: https://lotvale-nio4wjh93-shalyxs-projects.vercel.app — protected review preview, not a public judge link.
+- Live demo: https://lotvale.vercel.app — public production app; anonymous access and real SERV extraction verified.
 - Demo video: PENDING production/QA.
 - X submission post and post URL: PENDING explicit posting authorization.
 - Official form fields/eligibility details: PENDING final interactive inspection.

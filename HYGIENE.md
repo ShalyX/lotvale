@@ -1,9 +1,9 @@
-# Release hygiene
+# Public release hygiene
 
-Canonical identity: Lotvale. Purpose: supplier quotes into feasible buying plans and supplier-specific order drafts. Public source: https://github.com/ShalyX/lotvale.
+Canonical product: Lotvale. Public app: https://lotvale.vercel.app. Public source: https://github.com/ShalyX/lotvale.
 
-Completed: MIT license, setup instructions, matching favicon/social card, standard Next.js migration, Node 24 pin, encrypted preview-only SERV key, protected Vercel review preview. Source and the initial Git history were scanned against the configured key; 71 tracked paths and 25 compiled browser assets contained no secret matches. Only the placeholder .env.example is tracked. Local environment, Vercel state, dependencies and build output are ignored.
+Standard Next.js on Node 24, MIT license, matching favicon/social card, reproducible npm setup. Runtime secrets, local Vercel state, builds and dependencies excluded from Git. No history rewrite or user-file deletion. Earlier screenshots and responses remain labeled as local/preview evidence; public-plans.jpg and public-release.json describe production.
 
-A connector incorrectly classified a requested preview as production; that build was canceled before completion. The successful CLI deployment has target null (preview). No production promotion was performed. The earlier private host is superseded for review; it was not deleted.
+Fixed cleared-price input retaining zero. Rechecked 15 tests, TypeScript and Vercel production build. Public API uses server-only sensitive SERV key and verified six/minute/IP firewall limit. This does not provide a global spending cap.
 
-Open release gates: hosted visual inspection; mobile overflow reinspection; browser backup restore; public judge access; final video; official form and authorized X post/submission. This review preview is not a judge-ready public release.
+Open: full browser backup restore, demo film, official submission audit and receipt. No X post or form submission performed.

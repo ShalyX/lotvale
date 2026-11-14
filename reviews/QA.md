@@ -14,3 +14,7 @@ The initial extraction misclassified separately added tax. Clarified instruction
 Hosted Node 24 release: build READY; authenticated landing and workspace HTML returned 200; actual API returned 200 with all four expected offers, freight/tax and unconfirmed status. Evidence: vercel-extraction.json.
 
 Remaining verification: hosted browser flow, mobile overflow reinspection, and browser file-restore roundtrip. Desktop/mobile captures record the earlier local runtime and must not be described as hosted-release screenshots. Demo video and official submission are not complete.
+
+Public production release 2026-11-14: https://lotvale.vercel.app. Anonymous landing and extraction both returned 200; four expected Harbor Paper offers, freight and tax preserved (public-release.json). Public browser sample produced $755.08 and final screenshot public-plans.jpg. Hosted split order drafts were $326.80 + $439.89. Mobile at 390x844: document/body width 375 within viewport, no document overflow. Temporary viewport reset. Backup restore remains unverified: upload automation timed out, followed by an inconsistent confirmation-dialog response. No restore success claimed.
+
+API rate-limit probe with invalid inputs: 400 for allowed requests, then firewall 403 for excess requests; no provider calls in this probe.

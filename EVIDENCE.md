@@ -1,17 +1,16 @@
 # Evidence registry
 
-All suppliers and prices in QA are fictional. Figures below demonstrate the modeled workflow; they are not customer savings.
+All QA suppliers and prices are fictional. No customer savings, demand or revenue claimed.
 
 | Claim | Evidence | Limit |
 |---|---|---|
-| Complete buying plans | 15 planner/export tests; browser sample selected Counter Supply at $755.08 | Up to six items/quotes, one supplier per item, supported tax basis only |
-| Selected allocations become useful drafts | Browser selected $766.69 split plan; downloaded TXT inspected: Counter $326.80 and Westbridge $439.89 | Draft only; no dispatch or supplier acceptance |
-| Real SERV interpretation | Harbor Paper text returned four matching offers; buyer review produced $724.55 complete plan. Request chatcmpl-Ejv6VUFISJyMz2EzSVrx45GPMH4wO | One synthetic successful browser example; human review still required |
-| Missing and incompatible terms | Live unknown-term/injection case preserved null values and unconfirmed status; incompatible product rejected with 422 | Bounded adversarial examples, not general extraction accuracy |
-| Requirement changes | Lowering budget to $700 invalidated selection and displayed $24.55 over budget | Browser local persistence only |
-| Backup | Downloaded versioned JSON inspected; schema validation and roundtrip tested | File chooser prevented full browser restore verification |
-| Responsive interface | Desktop and mobile captures in reviews | Mobile root overflow correction needs final reinspection |
-| Vercel runtime | Vercel preview READY; authenticated workspace HTML returned 200; hosted SERV API returned 200 with four correct offers, request chatcmpl-Ejw0Q69v2brfXh6HPS69Igm1WEzTD | Hosted visual flow still pending because browser control timed out; final Node 24 deployment verified |
-| Demand, revenue and savings | Unproven | No customer or commercial claims |
+| Public judge access | https://lotvale.vercel.app; anonymous landing 200 and SERV extraction 200; reviews/public-release.json | Provider credit/availability required |
+| Whole-order planning | 15 passing planner/export tests; final public browser sample $755.08 | Six items/quotes, one currency and supported tax basis |
+| Supplier drafts | Hosted split selection $766.69; Counter $326.80 plus Westbridge $439.89 | Drafts only, no dispatch or supplier acceptance |
+| Actual SERV use | Public Harbor Paper request chatcmpl-EjwGmCa52BzwW7fKpGjhuQXvaMkAK; four offers with freight, tax and dates | Synthetic fixture, human review required |
+| Responsive layout | Hosted mobile 390x844; document width375, no overflow; viewport reset | Bounded breakpoint inspection |
+| Backups | JSON download inspected; schema validation tested | Browser restore inconclusive due upload automation |
+| Public API bounds | Firewall six requests/minute/IP; invalid probe blocked excess requests with403; reviews/rate-limit.json | Not a global spending cap |
+| Release | Node24 production build and TypeScript pass; public-plans.jpg captured on final production | Not an independent security audit |
 
-Live API responses and screenshots are under reviews/. No credentials are included. Earlier extraction failures led to clarified tax instructions and a provider-enforced JSON schema; see reviews/CODE-REVIEW.md.
+Earlier local/preview captures and API responses remain labeled by their QA notes. Video and official submission are incomplete.
