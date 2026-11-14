@@ -1,30 +1,12 @@
-LATEST REQUIREMENT: Read SERV-PROOF-REQUIREMENTS.md. Real SERV import, response and source review are mandatory; a sample-only film fails. This overrides any earlier sample-fallback or sponsor-as-end-credit guidance.
+# Demo production checks
 
-# Production checklist
+- Approved problem-to-payoff story and full connected narration produced.
+- Actual SERV request, extracted terms, source review and explicit confirmation shown.
+- Real complete plan, downloaded draft and business save/overview shown.
+- Fictional data and shortened waits disclosed.
+- Full 120-second 1080p30 film exported; decode and normal-speed browser playback passed.
+- Audio measured -16.6 LUFS integrated, peak -4.5dBFS; captions included.
+- Editable source, frozen assets, narration and captions prepared for public release.
+- Public access and final release rehearsal: see [current release report](reviews/FINAL-JUDGE-REHEARSAL.md).
 
-PREPARED by Codex: brief, selected treatment, shot timings, narration, exact capture choreography, regenerating fixtures, source brand assets, public-release proof, truth/rights checks, Antigravity task and submission copy.
-
-PENDING execution in Antigravity:
-- [ ] Refresh fixtures; inspect source product/version and actual reference films.
-- [ ] Capture real import, review, plan, draft, download; record artifact paths and request evidence.
-- [ ] Build editable composition; no screenshot slideshow or fake UI.
-- [ ] Record or generate approved free voice; music original/licensed, rights logged.
-- [ ] Align actual captions to final voice; no placeholder timecodes shipped.
-- [ ] Review readable UI at1080p and720p; numeric continuity755.08 throughout.
-- [ ] Render MP4; inspect entire film with sound, not just sampled frames.
-- [ ] Confirm runtime/codec with ffprobe and final frame/quiet tail.
-- [ ] Generate poster from a meaningful payoff frame; final URL/mark readable.
-- [ ] Secret/privacy scan all assets and footage; no credential/config/private applicant files.
-- [ ] Write QA.md separating observed checks from limits; deliver editable source and raw footage.
-- [ ] Obtain hosting/upload authorization if required; verify final playable public video URL.
-
-The video is not produced, approved or submitted yet. No unchecked item may be marked passed merely because a command exited0.
-
-Mandatory sponsor gate:
-- [ ] Real Counter source pasted and Interpret quote clicked on camera.
-- [ ] Actual loading/result retained as continuous raw proof; no fabricated trace or response.
-- [ ] SERV Reasoning legible during request and returned terms, not just end card.
-- [ ] At least24s of request/result/review in final55s cut.
-- [ ] Product mapping, pack price, freight, tax and dates visibly reviewed; confirmation shown.
-- [ ] Actual newly reviewed quote leads to755.08 plan and matching draft.
-- [ ] Sanitized provenance recorded; sample-only fallback rejected.
+No pending Antigravity production or rejected prototype is part of the submission. X publication and official form receipt are tracked separately.

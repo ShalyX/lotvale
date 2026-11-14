@@ -1,0 +1,15 @@
+Imagine you're opening a café. You need cups, lids, sleeves and napkins delivered before opening day. You have an eight-hundred-and-fifty-dollar budget, and three suppliers have sent their quotes.
+
+One has the lowest pack prices, but arrives too late. The others have different pack sizes, delivery charges and minimum orders. Now you have to work out which complete order you can actually buy.
+
+That's what Lotvale helps you do. Start with what you need, your budget and your deadline. Then bring in the supplier quotes. Here's the quote from Counter Supply.
+
+When we ask Lotvale to interpret it, the supplier text goes to SERV Reasoning. SERV matches the quoted products to our basket and extracts the pack sizes, prices, freight, tax and dates into an editable draft. We can inspect those terms in the workspace.
+
+We check the draft against the original quote: a hundred cups per pack, twenty-eight dollars for freight, and delivery on November nineteenth. We review the remaining items and charges, then confirm the terms. SERV handles the interpretation; the buying decision stays with us.
+
+Lotvale can now compare complete buying plans, accounting for packs, minimums, freight, tax and delivery. Here, the lowest complete on-time plan is seven hundred and fifty-five dollars and eight cents. It covers all four items, fits the budget, and arrives two days before the deadline.
+
+From that plan, we prepare the matching supplier draft, with the quantities and full order total. The purchase can also be saved to a business account, ready to pick up later. Nothing is ordered automatically.
+
+Lotvale. Understand the whole purchase before you place the order.

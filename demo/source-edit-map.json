@@ -1,0 +1,42 @@
+{
+  "method": "Manually inspected encoded source frames; event logs are not the edit clock. Source file 25fps; output clips30fps.",
+  "cuts": [
+    {
+      "name": "import",
+      "sourceStart": 5.5,
+      "sourceEnd": 9.5,
+      "screenDuration": 5
+    },
+    {
+      "name": "request",
+      "sourceStart": 9.5,
+      "sourceEnd": 22,
+      "screenDuration": 5
+    },
+    {
+      "name": "review",
+      "sourceStart": 22,
+      "sourceEnd": 27,
+      "screenDuration": 7
+    },
+    {
+      "name": "confirm",
+      "sourceStart": 26,
+      "sourceEnd": 30.9,
+      "screenDuration": 9
+    },
+    {
+      "name": "plan",
+      "sourceStart": 32,
+      "sourceEnd": 37,
+      "screenDuration": 11
+    },
+    {
+      "name": "draft",
+      "sourceStart": 40,
+      "sourceEnd": 47,
+      "screenDuration": 8
+    }
+  ],
+  "resultStill": "Actual same saved SERV response reopened in product, unconfirmed; frozen for readability. Not a new request."
+}

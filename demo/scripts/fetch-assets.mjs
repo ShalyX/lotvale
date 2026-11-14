@@ -1,0 +1,14 @@
+import {createHash} from 'node:crypto';
+import {writeFile,mkdir,readFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const archive=new URL('../.cache/assets.tar.gz',import.meta.url);
+await mkdir(new URL('../.cache/',import.meta.url),{recursive:true});
+const response=await fetch('https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo-assets.tar.gz');
+if(!response.ok)throw new Error('Asset download failed: '+response.status);
+await writeFile(archive,Buffer.from(await response.arrayBuffer()));
+if(createHash('sha256').update(await readFile(archive)).digest('hex')!=='f68aab07a41d47298ce587287753eafb76381149f63e1ccd784e8e4d09ce51d6')throw new Error('Asset checksum mismatch');
+const result=spawnSync('tar',['-xzf',fileURLToPath(archive),'-C',root],{stdio:'inherit'});
+if(result.status!==0)throw new Error('tar extraction failed');
+console.log('Verified media assets installed.');

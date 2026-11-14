@@ -1,22 +1,17 @@
 # Evidence registry
 
-All QA suppliers and prices are fictional. No customer savings, demand or revenue claimed.
+All suppliers, buyers and prices in QA and the film are fictional. No customer savings, demand, revenue or supplier acceptance is claimed.
 
 | Claim | Evidence | Limit |
 |---|---|---|
-| Public judge access | https://lotvale.vercel.app; anonymous landing 200 and SERV extraction 200; reviews/public-release.json | Provider credit/availability required |
-| Whole-order planning | 15 passing planner/export tests; final public browser sample $755.08 | Six items/quotes, one currency and supported tax basis |
-| Supplier drafts | Hosted split selection $766.69; Counter $326.80 plus Westbridge $439.89 | Drafts only, no dispatch or supplier acceptance |
-| Actual SERV use | Public Harbor Paper request chatcmpl-EjwGmCa52BzwW7fKpGjhuQXvaMkAK; four offers with freight, tax and dates | Synthetic fixture, human review required |
-| Responsive layout | Hosted mobile 390x844; document width375, no overflow; viewport reset | Bounded breakpoint inspection |
-| Backups | JSON download inspected; schema validation tested | Browser restore inconclusive due upload automation |
-| Public API bounds | Firewall six requests/minute/IP; invalid probe blocked excess requests with403; reviews/rate-limit.json | Not a global spending cap |
-| Release | Node24 production build and TypeScript pass; public-plans.jpg captured on final production | Not an independent security audit |
+| Current judge release | [Final judge rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md), [live app](https://lotvale.vercel.app), [public film](https://lotvale.vercel.app/demo) | Point-in-time checks, not an independent security audit |
+| Whole-order planning and exports | 15 planner/export tests; complete on-time sample $755.08; downloaded draft | Up to six items/quotes, one currency, supported tax basis |
+| Real SERV interpretation | Film request chatcmpl-Ek5KuMqkkjzb3mOmHwDVfYJMFdZFe returned 200 with four unconfirmed offers; current fresh request in final rehearsal | Synthetic text; source review and confirmation required |
+| Business storage and isolation | [Business QA](reviews/BUSINESS-QA.md), business-acceptance.json (11 groups) | Single owner; explicit save; bounded acceptance |
+| Email verification and recovery | [Auth QA](reviews/AUTH-QA.md), delivered OTP and reset link; old password/session and reset replay rejected | Shared Neon sender; broader-provider inbox placement untested; separate automated inbox retry failed and remains recorded |
+| Backup and restore | Current final browser roundtrip in [final rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md) | Restore replaces the browser-local purchase after confirmation |
+| Public API bounds | Six requests/minute/IP firewall; rate-limit.json | Provider credits needed; no global spending cap |
+| Film provenance | [Demo sources](demo/README.md), actual SERV review/plan/draft and business save | Shortened waits; held recorded evidence; all data fictional |
+| Film integrity | 120s, 1080p30 H.264/AAC; full decode and normal-speed playback; SHA-256 in [DEMO.md](DEMO.md) | Source re-render may differ with browser/fonts |
 
-Earlier local/preview captures and API responses remain labeled by their QA notes. Video and official submission are incomplete.
-
-Business workspace extension: actual managed signup and cloud persistence/isolation/conflict checks in reviews/business-acceptance.json; local browser flows and limits in reviews/BUSINESS-QA.md. Public deployment verification pending.
-
-Business production release VERIFIED: https://lotvale.vercel.app/business, deployment dpl_8v7nD4MU3C1RsoDhe17bYdfFWycS. Actual browser signup/onboarding/create/overview and live persistence/isolation/conflict checks passed. Public sample route and anonymous SERV response preserved; see reviews/BUSINESS-QA.md and business-demo-regression.json.
-
-Email verification and recovery release: production deployment dpl_3DPUCxyJNhdKmBvBAh8QBH131p7a. Actual delivered OTP verified through browser; reset link completed through browser; old password/session denied; new sign-in recovered the same cloud purchase; reset-token replay denied. Verified-account business acceptance passed all 11 groups. Public sample still builds $755.08 signed out. See reviews/AUTH-QA.md for limits and sender configuration.
+Historical reports under reviews describe their dated release and observations. Where older QA says restore inconclusive, film pending, verification off or deployment pending, use the newer specific evidence above. No X publication or form receipt is inferred from these tests.

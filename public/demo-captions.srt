@@ -1,0 +1,149 @@
+1
+00:00:00,714 --> 00:00:03,989
+Imagine you're opening a café. You need cups,
+
+2
+00:00:04,080 --> 00:00:07,881
+lids, sleeves and napkins delivered before opening day.
+
+3
+00:00:08,199 --> 00:00:12,355
+You have an eight-hundred-and-fifty-dollar budget, and three suppliers
+
+4
+00:00:12,219 --> 00:00:15,125
+have sent their quotes.
+
+One has the lowest
+
+5
+00:00:14,975 --> 00:00:18,591
+pack prices, but arrives too late. The others
+
+6
+00:00:18,441 --> 00:00:22,554
+have different pack sizes, delivery charges and minimum
+
+7
+00:00:22,404 --> 00:00:24,798
+orders. Now you have to work out which
+
+8
+00:00:24,648 --> 00:00:27,653
+complete order you can actually buy.
+
+That's what
+
+9
+00:00:27,503 --> 00:00:30,168
+Lotvale helps you do. Start with what you
+
+10
+00:00:30,018 --> 00:00:33,477
+need, your budget and your deadline. Then bring
+
+11
+00:00:33,327 --> 00:00:36,205
+in the supplier quotes. Here's the quote from
+
+12
+00:00:36,055 --> 00:00:39,628
+Counter Supply.
+
+When we ask Lotvale to interpret
+
+13
+00:00:39,478 --> 00:00:42,795
+it, the supplier text goes to SERV Reasoning.
+
+14
+00:00:43,114 --> 00:00:45,849
+SERV matches the quoted products to our basket
+
+15
+00:00:46,126 --> 00:00:50,991
+and extracts the pack sizes, prices, freight, tax
+
+16
+00:00:50,856 --> 00:00:54,060
+and dates into an editable draft. We can
+
+17
+00:00:53,910 --> 00:00:57,270
+inspect those terms in the workspace.
+
+We check
+
+18
+00:00:57,120 --> 00:01:00,196
+the draft against the original quote: a hundred
+
+19
+00:01:00,046 --> 00:01:03,335
+cups per pack, twenty-eight dollars for freight, and
+
+20
+00:01:03,185 --> 00:01:07,014
+delivery on November nineteenth. We review the remaining
+
+21
+00:01:06,864 --> 00:01:10,920
+items and charges, then confirm the terms. SERV
+
+22
+00:01:10,770 --> 00:01:14,742
+handles the interpretation; the buying decision stays with
+
+23
+00:01:14,592 --> 00:01:18,605
+us.
+
+Lotvale can now compare complete buying plans,
+
+24
+00:01:18,753 --> 00:01:23,477
+accounting for packs, minimums, freight, tax and delivery.
+
+25
+00:01:23,824 --> 00:01:27,469
+Here, the lowest complete on-time plan is seven
+
+26
+00:01:27,333 --> 00:01:30,565
+hundred and fifty-five dollars and eight cents. It
+
+27
+00:01:30,430 --> 00:01:34,258
+covers all four items, fits the budget, and
+
+28
+00:01:34,109 --> 00:01:37,795
+arrives two days before the deadline.
+
+From that
+
+29
+00:01:37,645 --> 00:01:41,616
+plan, we prepare the matching supplier draft, with
+
+30
+00:01:41,467 --> 00:01:45,480
+the quantities and full order total. The purchase
+
+31
+00:01:45,330 --> 00:01:47,895
+can also be saved to a business account,
+
+32
+00:01:48,242 --> 00:01:51,205
+ready to pick up later. Nothing is ordered
+
+33
+00:01:51,069 --> 00:01:56,077
+automatically.
+
+Lotvale. Understand the whole purchase before you
+
+34
+00:01:55,927 --> 00:01:56,972
+place the order.

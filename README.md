@@ -8,6 +8,8 @@ A cheap quote can still make a bad purchase. Pack quantities, minimum orders, fr
 
 Lotvale turns supplier quotes into complete buying plans and supplier-specific order drafts. It is built for small-business buyers who already have their quotes and need to make a decision.
 
+[Watch the two-minute demo](https://lotvale.vercel.app/demo) · [Judge walkthrough](JUDGE_GUIDE.md) · [Submission write-up](SUBMISSION.md)
+
 Live app: [lotvale.vercel.app](https://lotvale.vercel.app) — public access, no sign-in required.
 
 ## Business workspace
@@ -46,15 +48,18 @@ Create an ignored `.env.local` file at the project root:
 
 ```dotenv
 SERV_API_KEY=your_key_here
+DATABASE_URL=your_neon_postgres_connection_string
+NEON_AUTH_BASE_URL=your_managed_neon_auth_url
+NEON_AUTH_COOKIE_SECRET=at_least_32_random_characters
 ```
 
-Then run:
+Managed Neon Auth must allow your exact local origin. The auth proxy needs the Auth URL and cookie secret even for the public sample. Run `npm run db:migrate` for business storage, then run:
 
 ```sh
 npm run dev
 ```
 
-Open the printed local URL. The sample purchase works without a provider key; interpreting a new quote requires a valid SERV key and credits. For deployment, configure `SERV_API_KEY` as a server-side runtime secret. It must never be added to browser code.
+Open the printed local URL. With Auth configured, the sample purchase works without a provider key; interpreting a new quote requires a valid SERV key and credits. For deployment, configure `SERV_API_KEY` as a server-side runtime secret. It must never be added to browser code.
 
 ```sh
 npm run typecheck
@@ -78,6 +83,8 @@ The planner covers the modeled combinations, not every commercial negotiation. I
 ## Evidence and data
 
 The café sample and Harbor Paper QA quote are fictional, clearly labeled examples. The default sample's lowest complete on-time plan is $755.08; its $540.00 pack-price reference excludes commercial terms and uses a supplier that arrives late. These figures demonstrate the workflow, not real savings.
+
+Email verification and password recovery have been exercised with delivered emails and real browser sessions; see [authentication QA](reviews/AUTH-QA.md). [Final judge rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md) records the current hosted release.
 
 Fifteen deterministic tests cover complete baskets, budget and delivery constraints, pack rounding, minimums, expired/foreign/unreviewed quotes, missing charges, invalid inputs, and exported documents. Real SERV requests and browser checks are recorded under `reviews/`; see `EVIDENCE.md` for their limits. Customer demand and willingness to pay remain untested.
 

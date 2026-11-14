@@ -1,10 +1,10 @@
 # Judge-readiness assessment
 
-Official dimensions are creativity, user readiness and revenue potential. Numerical weights are unknown.
+Official dimensions: creativity, user readiness and revenue potential. Numerical weights are not published.
 
-- Creativity: the complete order accounts for packs, freight, tax, minimums and dates, and becomes supplier drafts. No universal novelty claim.
-- User readiness: public app, real SERV extraction, source review, complete plans, drafts and browser storage; automated and hosted browser evidence. Full file-restore QA remains inconclusive.
-- Revenue potential: specific small-business workflow and pricing hypothesis; demand and willingness to pay unvalidated.
-- Submission package: public source and app, original identity, write-up and proof. Film, X link, form audit and receipt remain open.
+- Creativity: translates separate supplier terms into complete feasible baskets and useful supplier-specific drafts. This is a workflow distinction, not a universal novelty claim.
+- User readiness: public sample, real SERV extraction, editable source review, complete plans, exports, backups and verified business accounts with cloud purchases. Current bounded acceptance is in [final rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md), with prior delivered-email recovery evidence in [auth QA](reviews/AUTH-QA.md).
+- Revenue potential: defined small-business purchasing workflow; subscription or paid-export hypothesis. Customer demand, willingness to pay and retention remain unvalidated.
+- Presentation: approved two-minute story puts the actual SERV request/review at the center; public source and write-up explain the product and limits.
 
-Current status: public and demoable; not READY_TO_SUBMIT.
+Submission completion still depends on the required X post URL, accurate applicant/organization answers and an observed form receipt. A polished package alone is not proof of submission.

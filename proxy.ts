@@ -4,6 +4,10 @@ export default auth.middleware({
   publicRoutes: [
     "/",
     "/app",
+    "/demo",
+    "/api/demo",
+    "/demo-poster.jpg",
+    "/demo-captions.srt",
     "/api/extract",
     "/api/business",
     "/favicon.svg",

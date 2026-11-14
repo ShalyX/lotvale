@@ -1,40 +1,30 @@
-# Lotvale — submission draft
+# Lotvale — SERV Hackathon 02
 
-Status: public production app and source verified; video kit prepared and dispatched to Google Antigravity; not submitted.
+Track: **Open Track**. New project. Status: public product and approved two-minute film prepared; final release checks recorded in [final rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md). An X post URL and observed form receipt are separate requirements; no submission is claimed here.
 
-## Short description
+## Project description
 
-Turn supplier quotes into a complete buying plan and supplier-specific order drafts.
+Lotvale helps small-business buyers turn supplier quotes into a complete buying plan and supplier-specific order drafts. Pack quantities, minimum orders, freight, tax and delivery dates can make the lowest quoted prices a poor purchase.
 
-## Problem and product
+SERV Reasoning reads pasted or imported text/CSV, matches quoted products to the buyer's basket and returns structured commercial terms with source excerpts. The buyer reviews and confirms those terms. Lotvale then calculates complete single- or split-supplier baskets that meet the stated budget and deadline, and exports draft orders and comparison data.
 
-A buyer receives three quotes. Each uses different pack quantities, freight charges, minimums and delivery terms. The lowest prices do not tell them whether the complete order will fit the budget or arrive on time.
+We built Lotvale as a new Open Track project during SERV Hackathon 02: the public sample and buying desk, live SERV integration, source-backed review, deterministic planning and exports, plus verified business accounts, password recovery and cloud-saved purchases with a purchase overview. The two-minute demo shows the actual SERV import, review and confirmation leading to a fictional $755.08 complete on-time basket and a saved business purchase.
 
-Lotvale brings those terms into one editable workspace. The buyer specifies what they need, reviews the quoted details, compares complete baskets and exports the chosen supplier orders.
+The intended business model is a small-business subscription or paid purchase exports; demand and willingness to pay have not yet been validated. All demo suppliers and prices are fictional. Lotvale does not place orders, verify inventory or execute payments.
 
-## What was built during the hackathon
+## Judge links
 
-A new purchase-planning app: purchase setup, text/CSV quote import, real SERV extraction, source-backed review, deterministic basket planning, requirement changes, supplier draft exports, CSV comparison, local persistence and project backups. Product definition, branding, interface and verification were created during Edition 02.
+- [Two-minute film and repeatable live SERV walkthrough](https://lotvale.vercel.app/demo)
+- [Public sample, no account required](https://lotvale.vercel.app/app?sample=1)
+- [Business workspace](https://lotvale.vercel.app/business)
+- [Public source](https://github.com/ShalyX/lotvale)
+- [Film release and editable sources](https://github.com/ShalyX/lotvale/releases/tag/demo-v1.0.0)
+- [Evidence and supported limits](EVIDENCE.md)
 
-## How SERV powers it
+## Official completion requirements
 
-SERV Reasoning interprets the supplier text and maps quoted products and commercial terms into a strict structured draft. The buyer checks the draft. Code calculates complete basket costs and evaluates the modeled combinations. Missing information stays unresolved until reviewed; a model response never approves a quote or places an order.
+[Official rules](https://www.openserv.ai/hackathon-2) require a public repo, demo, short write-up and a public X post whose URL is entered in [the form](https://openserv.typeform.com/submissions02). Deadline: **November 15, 2026 at 23:59 UTC** (November 16 at 00:59 Lagos). No video duration limit was found on the official page or in the form.
 
-## Track
+The live form was inspected on November 14. Required fields include applicant name/email, prior OpenServ experience, track, new/existing project, project name/description, demo URL, X post URL, whether OpenServ data collection is enabled, and team status. Optional fields include a second URL, logo, experience, country/affiliation/profile, feedback and consent choices. Applicant details and unfinished responses are kept outside this public repo. Marketing and feedback-quotation consent are not inferred.
 
-Open Track.
-
-## Why someone would pay
-
-The intended buyer is a small business operator who buys from several quotes without an enterprise sourcing system. A charging hypothesis is paid project exports or a small team subscription. No paid customer, revenue, measured savings or validated willingness to pay is claimed.
-
-## Links and release checks
-
-- Public repository: https://github.com/ShalyX/lotvale — public, verified.
-- Live demo: https://lotvale.vercel.app — public production app; anonymous access and real SERV extraction verified.
-- Demo video: storyboard, script, source assets and fixtures prepared; Antigravity execution/QA pending.
-- X submission post and post URL: PENDING explicit posting authorization.
-- Official form fields/eligibility details: PENDING final interactive inspection.
-- Submission receipt: NONE.
-
-All demo suppliers and prices are fictional. No orders or payments have been executed.
+The OpenServ data-collection question refers to the organization setting; database persistence is not evidence for that answer. A publication is complete only after its actual post URL and the form's confirmation have been verified.

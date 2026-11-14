@@ -1,0 +1,248 @@
+{
+  "lead": 0.6,
+  "total": 120,
+  "chapters": [
+    {
+      "id": 0,
+      "text": "Imagine you're opening a café. You need cups, lids, sleeves and napkins delivered before opening day. You have an eight-hundred-and-fifty-dollar budget, and three suppliers have sent their quotes.",
+      "start": 0,
+      "end": 14.080124999999999
+    },
+    {
+      "id": 1,
+      "text": "One has the lowest pack prices, but arrives too late. The others have different pack sizes, delivery charges and minimum orders. Now you have to work out which complete order you can actually buy.",
+      "start": 14.080124999999999,
+      "end": 27.219333000000002
+    },
+    {
+      "id": 2,
+      "text": "That's what Lotvale helps you do. Start with what you need, your budget and your deadline. Then bring in the supplier quotes. Here's the quote from Counter Supply.",
+      "start": 27.219333000000002,
+      "end": 37.460791
+    },
+    {
+      "id": 3,
+      "text": "When we ask Lotvale to interpret it, the supplier text goes to SERV Reasoning. SERV matches the quoted products to our basket and extracts the pack sizes, prices, freight, tax and dates into an editable draft. We can inspect those terms in the workspace.",
+      "start": 37.460791,
+      "end": 56.793166
+    },
+    {
+      "id": 4,
+      "text": "We check the draft against the original quote: a hundred cups per pack, twenty-eight dollars for freight, and delivery on November nineteenth. We review the remaining items and charges, then confirm the terms. SERV handles the interpretation; the buying decision stays with us.",
+      "start": 56.793166,
+      "end": 75.51479099999999
+    },
+    {
+      "id": 5,
+      "text": "Lotvale can now compare complete buying plans, accounting for packs, minimums, freight, tax and delivery. Here, the lowest complete on-time plan is seven hundred and fifty-five dollars and eight cents. It covers all four items, fits the budget, and arrives two days before the deadline.",
+      "start": 75.51479099999999,
+      "end": 97.29033299999999
+    },
+    {
+      "id": 6,
+      "text": "From that plan, we prepare the matching supplier draft, with the quantities and full order total. The purchase can also be saved to a business account, ready to pick up later. Nothing is ordered automatically.",
+      "start": 97.29033299999999,
+      "end": 112.44658299999999
+    },
+    {
+      "id": 7,
+      "text": "Lotvale. Understand the whole purchase before you place the order.",
+      "start": 112.44658299999999,
+      "end": 120
+    }
+  ],
+  "cues": {
+    "supplies": 3.242041,
+    "budget": 8.710791,
+    "quotes": 11.253416,
+    "late": 2.215916,
+    "different": 4.8011250000000025,
+    "brief": 2.159082999999999,
+    "import": 5.6249999999999964,
+    "call": 2.627834,
+    "result": 5.653417000000005,
+    "packs": 2.911959000000003,
+    "freight": 4.573875000000001,
+    "date": 7.173334000000004,
+    "confirm": 11.661958999999996,
+    "cost": 11.463042000000002,
+    "arrival": 18.59375,
+    "cloud": 7.4857920000000036,
+    "automatic": 12.571042000000006
+  },
+  "captions": [
+    {
+      "start": 0.713625,
+      "end": 3.9886239999999997,
+      "text": "Imagine you're opening a café. You need cups,"
+    },
+    {
+      "start": 4.080125,
+      "end": 7.880666,
+      "text": "lids, sleeves and napkins delivered before opening day."
+    },
+    {
+      "start": 8.199416,
+      "end": 12.355124,
+      "text": "You have an eight-hundred-and-fifty-dollar budget, and three suppliers"
+    },
+    {
+      "start": 12.219332999999999,
+      "end": 15.124999,
+      "text": "have sent their quotes.\n\nOne has the lowest"
+    },
+    {
+      "start": 14.975,
+      "end": 18.590916,
+      "text": "pack prices, but arrives too late. The others"
+    },
+    {
+      "start": 18.440916,
+      "end": 22.553958,
+      "text": "have different pack sizes, delivery charges and minimum"
+    },
+    {
+      "start": 22.403958000000003,
+      "end": 24.798291000000003,
+      "text": "orders. Now you have to work out which"
+    },
+    {
+      "start": 24.648291,
+      "end": 27.653416,
+      "text": "complete order you can actually buy.\n\nThat's what"
+    },
+    {
+      "start": 27.503416,
+      "end": 30.167624999999997,
+      "text": "Lotvale helps you do. Start with what you"
+    },
+    {
+      "start": 30.017625000000002,
+      "end": 33.477291,
+      "text": "need, your budget and your deadline. Then bring"
+    },
+    {
+      "start": 33.327291,
+      "end": 36.204541,
+      "text": "in the supplier quotes. Here's the quote from"
+    },
+    {
+      "start": 36.054541,
+      "end": 39.627832,
+      "text": "Counter Supply.\n\nWhen we ask Lotvale to interpret"
+    },
+    {
+      "start": 39.477833000000004,
+      "end": 42.795458,
+      "text": "it, the supplier text goes to SERV Reasoning."
+    },
+    {
+      "start": 43.114208000000005,
+      "end": 45.849457,
+      "text": "SERV matches the quoted products to our basket"
+    },
+    {
+      "start": 46.125583,
+      "end": 50.991457,
+      "text": "and extracts the pack sizes, prices, freight, tax"
+    },
+    {
+      "start": 50.855666,
+      "end": 54.059666,
+      "text": "and dates into an editable draft. We can"
+    },
+    {
+      "start": 53.909666,
+      "end": 57.269875,
+      "text": "inspect those terms in the workspace.\n\nWe check"
+    },
+    {
+      "start": 57.119875,
+      "end": 60.196041,
+      "text": "the draft against the original quote: a hundred"
+    },
+    {
+      "start": 60.046041,
+      "end": 63.335249,
+      "text": "cups per pack, twenty-eight dollars for freight, and"
+    },
+    {
+      "start": 63.18525,
+      "end": 67.014208,
+      "text": "delivery on November nineteenth. We review the remaining"
+    },
+    {
+      "start": 66.86420799999999,
+      "end": 70.920457,
+      "text": "items and charges, then confirm the terms. SERV"
+    },
+    {
+      "start": 70.77045799999999,
+      "end": 74.7415,
+      "text": "handles the interpretation; the buying decision stays with"
+    },
+    {
+      "start": 74.5915,
+      "end": 78.60512399999999,
+      "text": "us.\n\nLotvale can now compare complete buying plans,"
+    },
+    {
+      "start": 78.753416,
+      "end": 83.477291,
+      "text": "accounting for packs, minimums, freight, tax and delivery."
+    },
+    {
+      "start": 83.82445799999999,
+      "end": 87.468749,
+      "text": "Here, the lowest complete on-time plan is seven"
+    },
+    {
+      "start": 87.33295799999999,
+      "end": 90.565333,
+      "text": "hundred and fifty-five dollars and eight cents. It"
+    },
+    {
+      "start": 90.429541,
+      "end": 94.258499,
+      "text": "covers all four items, fits the budget, and"
+    },
+    {
+      "start": 94.10854099999999,
+      "end": 97.795458,
+      "text": "arrives two days before the deadline.\n\nFrom that"
+    },
+    {
+      "start": 97.64545799999999,
+      "end": 101.616499,
+      "text": "plan, we prepare the matching supplier draft, with"
+    },
+    {
+      "start": 101.4665,
+      "end": 105.480124,
+      "text": "the quantities and full order total. The purchase"
+    },
+    {
+      "start": 105.330125,
+      "end": 107.894875,
+      "text": "can also be saved to a business account,"
+    },
+    {
+      "start": 108.242041,
+      "end": 111.20454099999999,
+      "text": "ready to pick up later. Nothing is ordered"
+    },
+    {
+      "start": 111.06875,
+      "end": 116.07670700000001,
+      "text": "automatically.\n\nLotvale. Understand the whole purchase before you"
+    },
+    {
+      "start": 115.92670799999999,
+      "end": 116.97158200000001,
+      "text": "place the order."
+    }
+  ],
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "-12%",
+  "speechEnd": 116.821582
+}

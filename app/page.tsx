@@ -46,6 +46,9 @@ export default function Home() {
                 Start with your quotes <ArrowUpRight size={16} />
               </Link>
             </div>
+            <Link className="text-link" href="/demo">
+              Watch the two-minute story <ArrowUpRight size={16} />
+            </Link>
             <span className="quiet hero-note">
               Try the sample without an account. No order is sent.
             </span>
@@ -60,7 +63,7 @@ export default function Home() {
               <h2>
                 The counter
                 <br />
-                opens Friday.
+                opens soon.
               </h2>
               <PackageCheck size={34} strokeWidth={1.25} />
             </div>
