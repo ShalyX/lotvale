@@ -1,7 +1,7 @@
-# Demo architecture
+# Demo production
 
-Audience: judges evaluating creativity, user readiness and revenue potential. Remember: a cheap quote is not necessarily a workable order. Promise: turn supplier quotes into a complete buying plan and order drafts.
+55-second product film: The complete order. Fictional supplier quotes → real SERV interpretation → buyer review → $755.08 complete on-time plan → matching Counter Supply draft order. Source-backed footage, not a slide sequence. Detailed storyboard and production checklist are adjacent.
 
-Proposed 55-second film: 0–7s show the fictional café opening basket and conflicting supplier terms; 7–17s real SERV extraction and the editable source terms; 17–32s build plans and show the cheapest sticker-price supplier arriving after the deadline; 32–43s select an on-time complete basket and show tax/freight/pack math; 43–51s export supplier drafts; 51–55s product identity and truthful SERV integration credit. No official duration limit is known. Existing video references have not yet been inspected; this is architecture, not produced footage.
+Execution owner: Google Antigravity, per user request to conserve Codex credits. Isolated kit: ../lotvale-demo-antigravity. Source app is read-only. No film rendered in Codex. Paid media, public upload, social posting and form submission are not authorized.
 
-Mandatory payoff: source quotes -> Build buying plans -> actual feasible allocations, full cost and arrival -> usable order drafts. Fixture quotes are labeled fictional. No real supplier purchase or measured savings claimed. Reset loads the same sample, with dates relative to reset date. Provider failure leaves source text available for correction/manual entry; recorded proof must never be presented as a live request.
+No official video duration/codec constraint was published on the event landing page checked November14; selected output1920x1080/30fps, H264/AAC,55-second target. Public app demo link is a valid official fallback. Actual reference-video inspection and final video QA remain production tasks, not claimed complete.

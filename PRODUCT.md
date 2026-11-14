@@ -10,14 +10,14 @@ P0 coverage contract:
 
 | ID | User value and acceptance | Surface / implementation | Status |
 |---|---|---|---|
-| P0-1 | Create/edit title, currency, budget, deadline and up to six basket items with quantities | Purchase brief, lib/schema.ts | NOT_STARTED |
-| P0-2 | Import text/CSV, paste quote terms, and use real SERV to map terms into reviewable supplier offers | Quotes, /api/extract | NOT_STARTED |
-| P0-3 | Review source text and edit prices, pack sizes, MOQ, tax, freight, delivery and validity; explicitly confirm terms before inclusion | Quote editor | NOT_STARTED |
-| P0-4 | Compare complete single/split-supplier baskets using pack rounding, supplier minimums, freight, tax, validity, currency, budget and arrival constraints | Plans, lib/planner.ts | NOT_STARTED |
-| P0-5 | Change buying constraints, recalculate and explain exclusions or impossible requirements | Brief + Plans | NOT_STARTED |
-| P0-6 | Select plan and export real supplier-specific draft orders plus CSV comparison | Drafts, lib/exports.ts | NOT_STARTED |
-| P0-7 | Persist purchase locally, export/import project backup, start fresh without losing the saved purchase by accident | Browser storage / backups | NOT_STARTED |
-| P0-8 | Complete responsive and accessible entry-to-export flow with loading, error, empty and recovery states | All product surfaces | NOT_STARTED |
+| P0-1 | Create/edit title, currency, budget, deadline and up to six basket items with quantities | Purchase brief, lib/schema.ts | IMPLEMENTED |
+| P0-2 | Import text/CSV, paste quote terms, and use real SERV to map terms into reviewable supplier offers | Quotes, /api/extract | IMPLEMENTED |
+| P0-3 | Review source text and edit prices, pack sizes, MOQ, tax, freight, delivery and validity; explicitly confirm terms before inclusion | Quote editor | IMPLEMENTED |
+| P0-4 | Compare complete single/split-supplier baskets using pack rounding, supplier minimums, freight, tax, validity, currency, budget and arrival constraints | Plans, lib/planner.ts | IMPLEMENTED |
+| P0-5 | Change buying constraints, recalculate and explain exclusions or impossible requirements | Brief + Plans | IMPLEMENTED |
+| P0-6 | Select plan and export real supplier-specific draft orders plus CSV comparison | Drafts, lib/exports.ts | IMPLEMENTED |
+| P0-7 | Persist purchase locally, export/import project backup, start fresh without losing the saved purchase by accident | Browser storage / backups | IMPLEMENTED; browser restore verification inconclusive |
+| P0-8 | Complete responsive and accessible entry-to-export flow with loading, error, empty and recovery states | All product surfaces | IMPLEMENTED; bounded desktop/mobile QA, not exhaustive accessibility audit |
 
 First-release model: one ISO currency per purchase, integer quantities, up to six items and six supplier quotes, at most one offer per supplier/item, each item's demand assigned to one supplier (different items can go to different suppliers). Offers are pack-priced; minimum pack quantities and whole-supplier merchandise minimums apply. Tax is an explicitly confirmed percentage on merchandise plus freight. No assumed currency conversion or inferred tax policy. Every unknown commercial field stays editable and blocks confirmation until resolved. Document source snippets are preserved.
 

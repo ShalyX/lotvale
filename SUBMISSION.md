@@ -1,6 +1,6 @@
 # Lotvale — submission draft
 
-Status: implemented and locally verified; Vercel review deployment in progress; not submitted.
+Status: public production app and source verified; video kit prepared and dispatched to Google Antigravity; not submitted.
 
 ## Short description
 
@@ -32,7 +32,7 @@ The intended buyer is a small business operator who buys from several quotes wit
 
 - Public repository: https://github.com/ShalyX/lotvale — public, verified.
 - Live demo: https://lotvale.vercel.app — public production app; anonymous access and real SERV extraction verified.
-- Demo video: PENDING production/QA.
+- Demo video: storyboard, script, source assets and fixtures prepared; Antigravity execution/QA pending.
 - X submission post and post URL: PENDING explicit posting authorization.
 - Official form fields/eligibility details: PENDING final interactive inspection.
 - Submission receipt: NONE.
