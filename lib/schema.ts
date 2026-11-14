@@ -55,6 +55,13 @@ export const projectSchema = z
       email: z.string().max(200),
     }),
     sample: z.boolean(),
+    workspaceState: z
+      .object({
+        tab: z.enum(["quotes", "plans", "drafts"]),
+        selectedId: z.string().max(1000).nullable(),
+        planned: z.boolean(),
+      })
+      .optional(),
   })
   .superRefine((p, ctx) => {
     if (new Set(p.items.map((i) => i.id)).size !== p.items.length)

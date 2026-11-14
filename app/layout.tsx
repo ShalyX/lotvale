@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./business.css";
 
 export const metadata: Metadata = {
   title: "Lotvale — Make the whole order work",

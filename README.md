@@ -10,6 +10,12 @@ Lotvale turns supplier quotes into complete buying plans and supplier-specific o
 
 Live app: [lotvale.vercel.app](https://lotvale.vercel.app) — public access, no sign-in required.
 
+## Business workspace
+
+[Open your business workspace](https://lotvale.vercel.app/business) to create an account, set up your business and manage cloud-saved purchases. The purchase overview lists budgets, deadlines and quote review counts. Open a purchase to use the existing buying desk; **Save purchase** stores its terms and selected workflow to your account. Unsaved changes and revision conflicts remain visible. The first version supports one owner per business; team invitations and approvals are not included.
+
+The public [sample](https://lotvale.vercel.app/app?sample=1) and browser-local editor remain available without an account. Business data never uses the sample local-storage key.
+
 ## Use it
 
 1. Set your basket, quantities, budget and deadline.
@@ -18,7 +24,7 @@ Live app: [lotvale.vercel.app](https://lotvale.vercel.app) — public access, no
 4. Compare complete baskets by total cost, arrival date and supplier count.
 5. Choose a plan and download supplier drafts or a comparison CSV.
 
-The workspace saves in your browser. Export a JSON backup to move or recover a purchase. Draft orders are never sent to suppliers by the app.
+The public sample/local editor saves in your browser. Business purchases save to Postgres when you choose Save purchase. Export a JSON backup to move or recover a purchase. Draft orders are never sent to suppliers by the app.
 
 ## SERV Reasoning
 
@@ -84,3 +90,9 @@ Fifteen deterministic tests cover complete baskets, budget and delivery constrai
 - `app/api/extract/route.ts`: real SERV integration and response validation.
 
 Built by ElseMade for SERV Hackathon 02. MIT license for original project code; third-party dependencies retain their own licenses.
+
+## Business backend setup
+
+Use the ignored .env.local variables shown in .env.example: DATABASE_URL, NEON_AUTH_BASE_URL and a random NEON_AUTH_COOKIE_SECRET of at least32characters. Enable managed Neon Auth and allow the exact app origin, then run npm run db:migrate. The Next.js auth proxy owns sessions; business APIs authenticate and scope every query to the owner. Do not expose database credentials to the browser.
+
+For integration acceptance, start the app and run npm run test:business with LOTVALE_TEST_URL set to that exact trusted origin (default http://127.0.0.1:5180). This creates fictional test accounts/purchases and checks persistence, owner isolation, stale-write protection and sign-in/out. Email/password accounts use the managed provider; email ownership verification is currently off, and reset email delivery has not been acceptance-tested.

@@ -16,8 +16,8 @@ export default function Home() {
           <Brand />
         </Link>
         <span className="header-descriptor">A clearer way to buy.</span>
-        <Link className="button small secondary" href="/app">
-          Open workspace <ArrowUpRight size={16} />
+        <Link className="button small secondary" href="/business">
+          Business workspace <ArrowUpRight size={16} />
         </Link>
       </header>
       <main>
@@ -47,7 +47,7 @@ export default function Home() {
               </Link>
             </div>
             <span className="quiet hero-note">
-              Your workspace saves in this browser. No order is sent.
+              Try the sample without an account. No order is sent.
             </span>
           </div>
           <div className="hero-sheet">

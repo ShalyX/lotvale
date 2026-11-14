@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-14T06:00:35.678Z",
+  "base": "http://127.0.0.1:5180",
+  "report": [
+    {
+      "name": "Unauthenticated APIs denied; business redirects; sample public",
+      "status": "passed"
+    },
+    {
+      "name": "Real managed account signup",
+      "status": "passed"
+    },
+    {
+      "name": "Business onboarding",
+      "status": "passed"
+    },
+    {
+      "name": "Purchase creation is retry-safe",
+      "status": "passed"
+    },
+    {
+      "name": "Purchase edits and chosen workflow persist in Postgres",
+      "status": "passed"
+    },
+    {
+      "name": "Stale revision cannot overwrite saved purchase",
+      "status": "passed"
+    },
+    {
+      "name": "Cross-account reads and writes denied",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed snapshot rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Sign-out removes access",
+      "status": "passed"
+    },
+    {
+      "name": "New-session sign-in recovers cloud purchase; wrong password denied",
+      "status": "passed"
+    },
+    {
+      "name": "Password recovery entry and public local editor accessible",
+      "status": "passed"
+    }
+  ],
+  "limits": "API and server-render checks, not browser visual acceptance. Test accounts/data fictional."
+}

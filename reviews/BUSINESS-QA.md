@@ -1,0 +1,7 @@
+# Business workspace QA
+
+Local actual managed Auth and Postgres acceptance passed: signup, business onboarding, idempotent purchase creation, snapshot/workflow persistence, stale revision rejection, cross-account denial, invalid document rejection, sign-out, wrong-password failure, fresh-session recovery, protected business redirect and public local/sample access. Exact checks in business-acceptance.json; test accounts and data fictional.
+
+Browser acceptance: real signup -> business details -> empty overview -> create purchase -> edit title/budget -> Save purchase -> reload retained edits. JSON backup restored through actual file chooser and replacement confirmation. Built plans from restored fictional data, chose split plan766.69, prepared two supplier drafts, saved, reloaded and remained on the same two drafts at766.69. Cloud flow left local sample storage key untouched. Mobile390x844: editor document width390, all save/backup/restore controls visible. Screenshots beside this file are LOCAL runtime captures, not production proof.
+
+15 planner/export tests and TypeScript pass. Standard Next.js build passed before final small UI/persistence changes; hosted final build and production checks still pending. Email ownership verification is currently off in managed Auth. Reset entry is implemented and loads, but email delivery and reset completion were not exercised. No team invites/roles or approvals added.

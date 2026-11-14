@@ -26,3 +26,7 @@ Differentiators to retain: complete basket instead of isolated cheapest lines; v
 SERV interprets quote language and maps it to the buyer's basket. Deterministic code calculates money and evaluates combinations. Tests exercise these capabilities; neither tests nor an agent-management console become the product.
 
 Non-goals: supplier discovery, autonomous payments, dispatching orders/emails, enterprise ERP, legal/tax advice, real-time inventory guarantees. Text/CSV and pasting extracted PDF text are supported at launch; binary PDF import is a follow-up unless implemented and verified. No promise of OCR in this lock.
+
+## Approved extension — business workspace, revision2
+
+User approved business accounts, cloud-saved purchases and a purchase overview on November14, preserving the public judge/sample route. Adds managed account signup/sign-in, owner-managed business defaults, multiple cloud purchases, explicit save, optimistic revisions and saved workflow state. No team invitations or approval chains in this slice. Existing purchase-planning purpose and non-goals remain. Acceptance evidence: reviews/business-acceptance.json; browser evidence and deployment verification pending final release.

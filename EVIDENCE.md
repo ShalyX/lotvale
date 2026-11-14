@@ -14,3 +14,5 @@ All QA suppliers and prices are fictional. No customer savings, demand or revenu
 | Release | Node24 production build and TypeScript pass; public-plans.jpg captured on final production | Not an independent security audit |
 
 Earlier local/preview captures and API responses remain labeled by their QA notes. Video and official submission are incomplete.
+
+Business workspace extension: actual managed signup and cloud persistence/isolation/conflict checks in reviews/business-acceptance.json; local browser flows and limits in reviews/BUSINESS-QA.md. Public deployment verification pending.

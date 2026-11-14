@@ -34,20 +34,100 @@ import { sampleProject } from "@/lib/sample";
 import { download } from "@/lib/exports";
 const STORAGE = "lotvale.purchase.v1";
 type Tab = "quotes" | "plans" | "drafts";
-export function Workspace() {
+export function Workspace({
+  initialProject,
+  cloudId,
+  initialRevision = 1,
+}: {
+  initialProject?: Project;
+  cloudId?: string;
+  initialRevision?: number;
+} = {}) {
   const [project, setProject] = useState<Project | null>(null);
-  const [tab, setTab] = useState<Tab>("quotes");
+  const [tab, setTab] = useState<Tab>(
+    initialProject?.workspaceState?.tab ?? "quotes",
+  );
   const [notice, setNotice] = useState("");
   const [saveError, setSaveError] = useState("");
   const [brief, setBrief] = useState(false);
   const [importing, setImporting] = useState(false);
   const [editing, setEditing] = useState<Quote | null>(null);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [planned, setPlanned] = useState(false);
+  const [selectedId, setSelectedId] = useState<string | null>(
+    initialProject?.workspaceState?.selectedId ?? null,
+  );
+  const [planned, setPlanned] = useState(
+    initialProject?.workspaceState?.planned ?? false,
+  );
   const [replace, setReplace] = useState<"new" | "sample" | null>(null);
   const [dirty, setDirty] = useState(false);
   const backupInput = useRef<HTMLInputElement>(null);
+  const revision = useRef(initialRevision);
+  const latestProject = useRef(project);
+  latestProject.current = project;
+  const [saving, setSaving] = useState(false);
+  const [cloudError, setCloudError] = useState("");
+  const viewSignature = JSON.stringify({ tab, selectedId, planned });
+  const savedView = useRef(viewSignature);
+  const latestView = useRef(viewSignature);
+  latestView.current = viewSignature;
   useEffect(() => {
+    if (cloudId && viewSignature !== savedView.current) setDirty(true);
+  }, [cloudId, viewSignature]);
+  useEffect(() => {
+    if (!cloudId || !dirty) return;
+    const warn = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = "";
+    };
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [cloudId, dirty]);
+  async function saveCloud() {
+    if (!project || !cloudId || saving) return;
+    const snapshot = project;
+    setSaving(true);
+    setCloudError("");
+    try {
+      const response = await fetch(`/api/business/purchases/${cloudId}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          document: {
+            ...snapshot,
+            workspaceState: { tab, selectedId, planned },
+          },
+          revision: revision.current,
+        }),
+      });
+      const data = await response.json();
+      if (!response.ok)
+        throw new Error(
+          data.error ||
+            "Could not save this purchase. Back up your edits and retry.",
+        );
+      revision.current = data.revision;
+      savedView.current = viewSignature;
+      if (
+        latestProject.current === snapshot &&
+        latestView.current === viewSignature
+      )
+        setDirty(false);
+      setNotice("Purchase saved to your business workspace.");
+    } catch (error) {
+      setCloudError(
+        error instanceof Error
+          ? error.message
+          : "Could not save. Your edits are still open.",
+      );
+    } finally {
+      setSaving(false);
+    }
+  }
+  useEffect(() => {
+    if (cloudId && initialProject) {
+      setProject(initialProject);
+      return;
+    }
     try {
       const params = new URLSearchParams(window.location.search);
       const saved = localStorage.getItem(STORAGE);
@@ -78,6 +158,7 @@ export function Workspace() {
     window.history.replaceState({}, "", window.location.pathname);
   }, []);
   useEffect(() => {
+    if (cloudId) return;
     if (!project || !dirty) return;
     try {
       localStorage.setItem(STORAGE, JSON.stringify(project));
@@ -152,17 +233,63 @@ export function Workspace() {
     );
   const confirmed = project.quotes.filter((q) => q.confirmed).length;
   return (
-    <div className="workspace">
+    <div className={`workspace${cloudId ? " cloud-workspace" : ""}`}>
       <header className="workspace-header">
-        <Link href="/" aria-label="Lotvale home">
+        <Link
+          href="/"
+          aria-label="Lotvale home"
+          onClick={(event) => {
+            if (
+              cloudId &&
+              dirty &&
+              !window.confirm(
+                "You have unsaved changes. Stay here to save or back up your purchase. Leave anyway?",
+              )
+            )
+              event.preventDefault();
+          }}
+        >
           <Brand small />
         </Link>
-        <span className="workspace-label">YOUR BUYING DESK</span>
+        {cloudId ? (
+          <Link
+            className="workspace-label"
+            href="/business"
+            onClick={(event) => {
+              if (
+                dirty &&
+                !window.confirm(
+                  "You have unsaved changes. Stay here to save or back up your purchase. Leave anyway?",
+                )
+              )
+                event.preventDefault();
+            }}
+          >
+            ← Purchases
+          </Link>
+        ) : (
+          <span className="workspace-label">YOUR BUYING DESK</span>
+        )}
         <div className="workspace-tools">
           <span className={`save-status ${saveError ? "danger" : ""}`}>
             <span />
-            {saveError ? "Backup recommended" : "Saved in this browser"}
+            {cloudId
+              ? dirty
+                ? "Unsaved changes"
+                : "Saved to your business"
+              : saveError
+                ? "Backup recommended"
+                : "Saved in this browser"}
           </span>
+          {cloudId && (
+            <button
+              className="button small primary"
+              onClick={() => void saveCloud()}
+              disabled={saving || !dirty}
+            >
+              {saving ? "Saving…" : "Save purchase"}
+            </button>
+          )}
           <button
             className="button small ghost"
             aria-label="Download project backup"
@@ -205,6 +332,12 @@ export function Workspace() {
           />
         </div>
       </header>
+      {cloudError && (
+        <div className="business-error" role="alert">
+          {cloudError} Your open edits have been preserved. Use Backup before
+          reloading.
+        </div>
+      )}
       <div className="workspace-layout">
         <aside className="brief-rail">
           <div className="rail-eyebrow">PURCHASE / 01</div>
@@ -261,10 +394,24 @@ export function Workspace() {
             <p>
               <Package size={17} /> Plan here. Place orders with your suppliers.
             </p>
-            <button className="text-link" onClick={() => setReplace("new")}>
+            <button
+              className="text-link"
+              onClick={() =>
+                cloudId
+                  ? window.location.assign("/business?new=1")
+                  : setReplace("new")
+              }
+            >
               New purchase <Plus size={14} />
             </button>
-            <button className="text-link" onClick={() => setReplace("sample")}>
+            <button
+              className="text-link"
+              onClick={() =>
+                cloudId
+                  ? window.location.assign("/app?sample=1")
+                  : setReplace("sample")
+              }
+            >
               Explore sample <ArrowUpRight size={14} />
             </button>
           </div>
