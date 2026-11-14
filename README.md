@@ -100,7 +100,7 @@ Built by ElseMade for SERV Hackathon 02. MIT license for original project code; 
 
 ## Business backend setup
 
-Use the ignored .env.local variables shown in .env.example: DATABASE_URL, NEON_AUTH_BASE_URL and a random NEON_AUTH_COOKIE_SECRET of at least32characters. Enable managed Neon Auth and allow the exact app origin, then run npm run db:migrate. The Next.js auth proxy owns sessions; business APIs authenticate and scope every query to the owner. Do not expose database credentials to the browser.
+Use the ignored .env.local variables shown in .env.example: DATABASE_URL, NEON_AUTH_BASE_URL and a random NEON_AUTH_COOKIE_SECRET of at least 32 characters. Enable managed Neon Auth and allow the exact app origin, then run npm run db:migrate. The Next.js auth proxy owns sessions; business APIs authenticate and scope every query to the owner. Do not expose database credentials to the browser.
 
 For integration acceptance, start the app and run npm run test:business with LOTVALE_TEST_URL set to that exact trusted origin (default http://127.0.0.1:5180). Supply two disposable, already verified QA accounts through LOTVALE_TEST_EMAIL, LOTVALE_TEST_OTHER_EMAIL and LOTVALE_TEST_PASSWORD. This checks persistence, owner isolation, stale-write protection and sign-in/out; never use customer accounts.
 

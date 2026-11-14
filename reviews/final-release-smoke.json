@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-14T14:29:30.875Z",
+  "applicationCommit": "67ae915c675c3d7f9c6b16d490534b3d7ae2cb6f",
+  "deploymentId": "dpl_2z7SZdPwhc3MdHn742BoaAbRHznV",
+  "checks": {
+    "finalPlayer": {
+      "preload": "none",
+      "src": "https://lotvale-demo-video.vercel.app/lotvale-demo-stream.mp4",
+      "poster": "https://lotvale.vercel.app/demo-poster.jpg"
+    },
+    "posterAnonymous200": true,
+    "finalPagePlayback": {
+      "time": 2.026208,
+      "error": 0,
+      "duration": 120
+    },
+    "mobile": {
+      "viewport": 390,
+      "width": 390
+    },
+    "finalSample75508": true,
+    "anonymousBusinessApi401": true
+  },
+  "passed": true
+}
