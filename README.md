@@ -8,15 +8,15 @@ A cheap quote can still make a bad purchase. Pack quantities, minimum orders, fr
 
 Lotvale turns supplier quotes into complete buying plans and supplier-specific order drafts. It is built for small-business buyers who already have their quotes and need to make a decision.
 
-[Watch the two-minute demo](https://lotvale.vercel.app/demo) · [Judge walkthrough](JUDGE_GUIDE.md) · [Submission write-up](SUBMISSION.md)
+[Watch the two-minute demo](https://lotvale-cyan.vercel.app/demo) · [Judge walkthrough](JUDGE_GUIDE.md) · [Submission write-up](SUBMISSION.md)
 
-Live app: [lotvale.vercel.app](https://lotvale.vercel.app) — public access, no sign-in required.
+Live app: [lotvale.vercel.app](https://lotvale-cyan.vercel.app) — public access, no sign-in required.
 
 ## Business workspace
 
-[Open your business workspace](https://lotvale.vercel.app/business) to create an account, set up your business and manage cloud-saved purchases. The purchase overview lists budgets, deadlines and quote review counts. Open a purchase to use the existing buying desk; **Save purchase** stores its terms and selected workflow to your account. Unsaved changes and revision conflicts remain visible. The first version supports one owner per business; team invitations and approvals are not included.
+[Open your business workspace](https://lotvale-cyan.vercel.app/business) to create an account, set up your business and manage cloud-saved purchases. The purchase overview lists budgets, deadlines and quote review counts. Open a purchase to use the existing buying desk; **Save purchase** stores its terms and selected workflow to your account. Unsaved changes and revision conflicts remain visible. The first version supports one owner per business; team invitations and approvals are not included.
 
-The public [sample](https://lotvale.vercel.app/app?sample=1) and browser-local editor remain available without an account. Business data never uses the sample local-storage key.
+The public [sample](https://lotvale-cyan.vercel.app/app?sample=1) and browser-local editor remain available without an account. Business data never uses the sample local-storage key.
 
 ## Use it
 

@@ -1,6 +1,6 @@
 # Before you place the order
 
-The approved Lotvale story is a two-minute film: [watch publicly](https://lotvale.vercel.app/demo), [download the master MP4](https://lotvale-demo-video.vercel.app/lotvale-demo.mp4), [GitHub archive](https://github.com/ShalyX/lotvale/releases/tag/demo-v1.0.0).
+The approved Lotvale story is a two-minute film: [watch publicly](https://lotvale-cyan.vercel.app/demo), [download the master MP4](https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4), [GitHub archive](https://github.com/ShalyX/lotvale/releases/tag/demo-v1.0.0).
 
 It starts with a café opening, an $850 budget and three quotes. The lower line prices arrive late. A real SERV request interprets the Counter quote; the buyer checks source-backed terms and confirms them. A complete $755.08 basket leads to the supplier draft, followed by actual business save and purchase overview.
 
@@ -12,4 +12,4 @@ Final export: 120 seconds, 1920×1080 at 30fps, H.264/AAC, 48kHz stereo. Measure
 
 Earlier short drafts and the rejected simulated Remotion prototype are superseded. They are preserved locally and excluded from Git and deployment. This released film is the judge artifact. Hosting/release and final product checks are recorded separately in [final rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md).
 
-The embedded player uses a smaller 8.94 MB, 1080p30 streaming rendition of the same 120-second film. The original 27.12 MB master remains available above. Narrative, motion and timing are unchanged; video/audio are compressed for delivery. GitHub playback timed out in this session, so Vercel serves the primary player. Use the final delivery report for the observed playback result, rather than assuming every host or connection was tested.
+The embedded player serves the approved 8.94 MB, 1080p30 streaming rendition from this application at `/lotvale-demo-stream.mp4`; it no longer depends on the separate video-hosting project. The exact released stream has SHA-256 `1acdfbca013d87d535a9f4ecbc38b7417ed49931a3a2f5dd2df3308bb7e38f45`. The original 27.12 MB master remains available from the GitHub release. Narrative, motion and timing are unchanged.

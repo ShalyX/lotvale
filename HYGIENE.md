@@ -1,6 +1,6 @@
 # Public release hygiene
 
-Canonical product: Lotvale. [Public app](https://lotvale.vercel.app), [film](https://lotvale.vercel.app/demo), [source](https://github.com/ShalyX/lotvale). Standard Next.js on Node 24, original identity, MIT license for original code. Dependencies retain their own licenses.
+Canonical product: Lotvale. [Public app](https://lotvale-cyan.vercel.app), [film](https://lotvale-cyan.vercel.app/demo), [source](https://github.com/ShalyX/lotvale). Standard Next.js on Node 24, original identity, MIT license for original code. Dependencies retain their own licenses.
 
 Secrets, local QA accounts, applicant details, environment files, build output and dependencies remain outside Git. The rejected Antigravity Remotion prototype, reports and test voiceover are preserved locally but ignored by Git and excluded from Vercel. No user files were deleted and no Git history was rewritten.
 

@@ -1,6 +1,6 @@
 # Before you place the order
 
-The approved two-minute Lotvale film. [Watch](https://lotvale.vercel.app/demo) · [Download](https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4).
+The approved two-minute Lotvale film. [Watch](https://lotvale-cyan.vercel.app/demo) · [Download](https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4).
 
 The film uses real recorded product behavior, including a successful SERV request, extracted-term review, confirmed planning, supplier draft and cloud save. Suppliers and prices are fictional. Waits are shortened, with recorded evidence stills held where needed for explanation. No live inference is triggered by playback.
 
@@ -23,4 +23,4 @@ The approved narration is in narration.txt, captions in captions.srt, and the st
 
 [Editable source archive](https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo-source.tar.gz) is separate from the frozen media archive. The release's automatically generated Git source archives reflect its original base tag; use the editable source asset or this directory on main for the film renderer.
 
-The public player streams a smaller 1080p30 rendition from [Vercel](https://lotvale-demo-video.vercel.app/lotvale-demo-stream.mp4); the full-quality master is also [mirrored there](https://lotvale-demo-video.vercel.app/lotvale-demo.mp4). To generate that streaming rendition from the master, use FFmpeg with libx264, preset medium, CRF 25, maxrate 900k, bufsize 1800k, yuv420p, AAC at 96k and movflags +faststart. Duration, narration, motion and captions are unchanged.
+The public player serves the approved 8.94 MB, 1080p30 streaming rendition from the Lotvale application itself at `/lotvale-demo-stream.mp4`, so playback does not depend on a separate video-hosting project. The deployed stream matches SHA-256 `1acdfbca013d87d535a9f4ecbc38b7417ed49931a3a2f5dd2df3308bb7e38f45`. The full-quality 27.12 MB master remains available from the [GitHub release](https://github.com/ShalyX/lotvale/releases/download/demo-v1.0.0/lotvale-demo.mp4). To regenerate the streaming rendition from the master, use FFmpeg with libx264, preset medium, CRF 25, maxrate 900k, bufsize 1800k, yuv420p, AAC at 96k and movflags +faststart. Duration, narration, motion and captions are unchanged.

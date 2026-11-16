@@ -14,9 +14,9 @@ The intended business model is a small-business subscription or paid purchase ex
 
 ## Judge links
 
-- [Two-minute film and repeatable live SERV walkthrough](https://lotvale.vercel.app/demo)
-- [Public sample, no account required](https://lotvale.vercel.app/app?sample=1)
-- [Business workspace](https://lotvale.vercel.app/business)
+- [Two-minute film and repeatable live SERV walkthrough](https://lotvale-cyan.vercel.app/demo)
+- [Public sample, no account required](https://lotvale-cyan.vercel.app/app?sample=1)
+- [Business workspace](https://lotvale-cyan.vercel.app/business)
 - [Public source](https://github.com/ShalyX/lotvale)
 - [Film release and editable sources](https://github.com/ShalyX/lotvale/releases/tag/demo-v1.0.0)
 - [Evidence and supported limits](EVIDENCE.md)

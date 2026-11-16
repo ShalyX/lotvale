@@ -4,7 +4,7 @@ All suppliers, buyers and prices in QA and the film are fictional. No customer s
 
 | Claim | Evidence | Limit |
 |---|---|---|
-| Current judge release | [Final judge rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md), [live app](https://lotvale.vercel.app), [public film](https://lotvale.vercel.app/demo) | Point-in-time checks, not an independent security audit |
+| Current judge release | [Final judge rehearsal](reviews/FINAL-JUDGE-REHEARSAL.md), [live app](https://lotvale-cyan.vercel.app), [public film](https://lotvale-cyan.vercel.app/demo) | Point-in-time checks, not an independent security audit |
 | Whole-order planning and exports | 15 planner/export tests; complete on-time sample $755.08; downloaded draft | Up to six items/quotes, one currency, supported tax basis |
 | Real SERV interpretation | Film request chatcmpl-Ek5KuMqkkjzb3mOmHwDVfYJMFdZFe returned 200 with four unconfirmed offers; current fresh request in final rehearsal | Synthetic text; source review and confirmation required |
 | Business storage and isolation | [Business QA](reviews/BUSINESS-QA.md), business-acceptance.json (11 groups) | Single owner; explicit save; bounded acceptance |
