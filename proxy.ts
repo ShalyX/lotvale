@@ -8,6 +8,7 @@ export default auth.middleware({
     "/api/demo",
     "/demo-poster.jpg",
     "/demo-captions.srt",
+    "/lotvale-demo-stream.mp4",
     "/api/extract",
     "/api/business",
     "/favicon.svg",
